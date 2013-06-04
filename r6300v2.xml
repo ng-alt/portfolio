@@ -165,7 +165,7 @@
     <include-file name="^tools/misc/epi_ttcp.c"/>
   </project>
   <project name="vendor_broadcom_router" location="src/router">
-    <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|httpd|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)"/>
+    <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)"/>
     <include-dir name="^bcmupnp"/>
     <include-dir name="^config" exclude-files="defconfig.*"/>
     <include-dir name="^ctf"/>
@@ -209,7 +209,7 @@
     <include-file name="^usr/bin/(taskset)$"/>
     <include-file name="^usr/lib/(libbigballofmud.so.0|libnat.so)$"/>
     <include-file name="^usr/local/share/foxconn_ca$"/>
-    <include-file name="^usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpsd.pem)$"/>
+    <include-file name="^usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
     <include-file name="^usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
     <include-file name="^usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
   </project>
