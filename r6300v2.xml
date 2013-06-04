@@ -193,6 +193,7 @@
   </project>
   <project name="vendor_netgear_acos" location="ap/acos" symlinks="false">
     <exclude-dir name="acos_nat"/>
+    <!--exclude-dir name="shared"/-->
   </project>
   <project name="vendor_netgear_router_l7filter" location="ap/gpl/l7filter">
     <exclude-file name="^.l7_filter_main.o.flags$"/>
@@ -207,7 +208,7 @@
     <include-file name="^sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
     <include-file name="^sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
     <include-file name="^usr/bin/(taskset)$"/>
-    <include-file name="^usr/lib/(libbigballofmud.so.0|libnat.so)$"/>
+    <include-file name="^usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so)$"/>
     <include-file name="^usr/local/share/foxconn_ca$"/>
     <include-file name="^usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
     <include-file name="^usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
