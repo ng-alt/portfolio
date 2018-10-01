@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations>
+  <project name="bridge-utils" location="src/router/bridge-1.x">
+    <exclude-file name="aclocal.m4"/>
+    <exclude-file name="configure$"/>
+    <exclude-file name="Makefile$"/>
+    <exclude-file name="brctl/brctl$"/>
+    <exclude-file name="libbridge/config.h$"/>
+  </project>
+  <project name="bftpd" location="ap/gpl/bftpd-1.6.6"/>
+  <project name="busybox" location="src/router/busybox-1.x">
+    <exclude-dir name="^include/config"/>
+    <exclude-file name="^\.config.*"/>
+    <exclude-file name="^include/(autoconf.h|bbconfigopts.h|usage_compressed.h)$"/>
+    <exclude-file name="^scripts/basic/(docproc|fixdep|split-include)$"/>
+    <exclude-file name="^scripts/kconfig/(lxdialog/lxdialog|.*conf|lex.zconf.c|zconf.hash.c|zconf.tab.c)$"/>
+  </project>
+  <project name="bzip2" location="ap/gpl/bzip2"/>
+  <project name="dhcpv6" location="src/router/dhcp6"/>
+  <project name="dnsmasq" location="ap/gpl/dnsmasq-2.15"/>
+  <project name="FFmpeg" location="ap/gpl/minidlna/ffmpeg-0.5.1">
+    <exclude-file name=".*\.d$|.*\.pc$"/>
+    <exclude-file name="^config\.(err|h|mak)$"/>
+    <exclude-file name="^version.h$"/>
+  </project>
+  <project name="flac" location="ap/gpl/minidlna/flac-1.2.1">
+    <exclude-dir name="^doc/html/api"/>
+    <exclude-dir name="^flac.pbproj"/>
+    <exclude-dir name="^src/utils"/>
+    <exclude-file name="^doc/FLAC.tag"/>
+    <exclude-file name="^man/manpage.*"/>
+    <exclude-file name="^src/libFLAC/ia32/lpc_asm-unrolled.nasm"/>
+    <exclude-file name="^src/test_libFLAC/matrix"/>
+    <exclude-file name="^config\.(guess|h.in|rpath|sub)$"/>
+    <exclude-file name="^(aclocal.m4|configure|depcomp|install-sh|ltmain.sh|missing|mkinstalldirs)$"/>
+    <exclude-file name="Makefile.in"/>
+  </project>
+  <project name="flex" location="src/router/flex">
+    <exclude-dir name="^MISC"/>
+    <exclude-file name=".*\.o"/>
+    <exclude-file name="^(\.bootstrap|config\..*|configure|conf\.in|flex|initscan.c|INSTALL|install.sh|libfl.a|Makefile|mkinstalldirs|parse.[ch]?|scan.c|skel.c|stamp-h)$"/>
+  </project>
+  <project name="hotplug2" location="src/router/hotplug2"/>
+  <project name="igmpv3proxy" location="ap/gpl/IGMP-PROXY">
+    <exclude-dir name="^autom4te.cache"/>
+    <exclude-file name="^src/tags"/>
+    <exclude-file name="^config.log"/>
+  </project>
+  <project name="iproute2" location="ap/gpl/iproute2">
+    <exclude-dir name="^man"/>
+    <exclude-file name="^ip/rtmon$"/>
+    <exclude-file name="^Config$"/>
+  </project>
+  <project name="iptables" location="src/router/iptables-1.4.12/src">
+    <exclude-dir name="^install"/>
+    <exclude-dir name="^m4"/>
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|compile|configure|depcomp|install-sh|ltmain.sh|missing)$"/>
+    <exclude-file name="^config\.(guess|h.in|sub)$"/>
+  </project>
+  <project name="l2tpd" location="ap/gpl/l2tpd-0.69"/>
+  <project name="libid3tag" location="ap/gpl/minidlna/libid3tag-0.15.0b"/>
+  <project name="libvorbis" location="ap/gpl/minidlna/libvorbis-1.2.3">
+    <exclude-dir name="^autom4te.cache"/>
+    <exclude-dir name="^debian"/>
+    <exclude-dir name="^doc"/>
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^lib/misc.c"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing)$"/>
+  </project>
+  <project name="linux" location="components/opensource/linux/linux-2.6.36">
+    <exclude-dir name="^include/config"/>
+    <exclude-dir name="^include/generated"/>
+    <exclude-file name="^scripts/basic/(docproc|fixdep|hash)$"/>
+    <exclude-file name="^scripts/kconfig/(.*conf|lex.zconf.c|zconf.hash.c|zconf.tab.c)$"/>
+    <exclude-file name="^scripts/mod/(elfconfig.h|mk_elfconfig|modpost)$"/>
+    <exclude-file name="^scripts/kallsyms"/>
+    <exclude-file name="^include/linux/version.h"/>
+    <exclude-file name="^arm_build_env.sh$"/>
+    <exclude-file name="\.config.*"/>
+    <exclude-file name="\.version"/>
+    <exclude-file name="Module.symvers"/>
+    <exclude-file name="modules.builtin"/>
+    <exclude-file name="modules.order"/>
+    <exclude-file name="vmlinux_dbgsym"/>
+  </project>
+  <project name="LZMA-SDK" location="src/tools/misc/lzma_src"/>
+  <project name="minidlna" location="ap/gpl/minidlna/minidlna.03.14">
+    <exclude-file name=".*\.po"/>
+    <exclude-file name="^(NEWS|upnpglobalvars.h.old)$"/>
+  </project>
+  <project name="ntpclient" location="src/router/ntpclient"/>
+  <project name="openvpn" location="ap/gpl/openvpn-2.3.1">
+    <exclude-dir name="^doc"/>
+    <exclude-dir name="^m4"/>
+    <exclude-dir name="^tests"/>
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^test/t_cllient.rc-sample$"/>
+    <exclude-file name="^(\.mailmap|\.svncommitters)$"/>
+    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|install-sh|ltmain.sh|missing)$"/>
+  </project>
+  <project name="ppp" location="ap/gpl/ppp-2.4.4">
+    <exclude-dir name="^aix4"/>
+    <exclude-dir name="^freebsd-.*"/>
+    <exclude-dir name="^linux"/>
+    <exclude-dir name="^netbsd-.*"/>
+    <exclude-dir name="^NeXT"/>
+    <exclude-dir name="^osf1"/>
+    <exclude-dir name="^sunos4"/>
+    <exclude-dir name="^svr4"/>
+    <exclude-dir name="^ultrix"/>
+    <exclude-file name="Makefile.*"/>
+    <exclude-file name="^README.*|^TODO$|^ppp.texi$"/>
+    <exclude-file name="^pppd/sys-.*$"/>
+  </project>
+  <project name="pppoe" location="ap/gpl/pppoecd">
+    <exclude-file name="^start$"/>
+  </project>
+  <project name="pptpclient" location="ap/gpl/pptp">
+    <exclude-dir name="^debian"/>
+    <exclude-file name="^Reference/(README.Reference|ms-chap.txt)$"/>
+    <exclude-file name="^pptp$"/>
+    <exclude-file name="^(RELEASING|test-multiple-tunnels-.\.sh)$"/>
+  </project>
+  <project name="quagga" location="ap/gpl/zebra">
+    <exclude-dir name=".deps"/>
+    <exclude-file name="Makefile"/>
+    <exclude-file name="^(aczebra.m4|stamp-h.in)$"/>
+    <exclude-file name="^(config.h|config.log|config.status|stamp-h1)$"/>
+  </project>
+  <project name="radvd" location="ap/gpl/radvd">
+    <exclude-file name="^(aclocal.m4|config.h.in|configure|Makefile.in)$"/>
+    <exclude-file name="^(gram.c|gram.h|scanner.c)$"/>
+  </project>
+  <project name="samba" location="ap/gpl/samba-3.0.13|ap/gpl/samba-3.0.25b">
+    <exclude-dir name="^docs"/>
+    <exclude-dir name="^examples"/>
+    <exclude-dir name="^packaging"/>
+    <exclude-file name=".*/Makefile$"/>
+    <exclude-file name="^(\.conf|config.h)$"/>
+    <exclude-file name="^source/include/(config.h.in|config.h|stamp-h)$"/>
+    <exclude-file name="^source/(bin/log.nmbd|config.log|config.status|interfaces|log|smbadduser)$"/> 
+  </project>
+  <project name="sqlite" location="ap/gpl/minidlna/sqlite-3.6.22">
+    <exclude-dir name="^test"/>
+    <exclude-file name="^(sqlite3.pc|configure|log)$"/>
+  </project>
+  <project name="squashfs-tools" location="src/router/squashfs-4.2">
+    <exclude-file name="^mksquashfs$"/>
+  </project>
+  <project name="udev" location="src/router/udev"/>
+  <project name="udhcp" location="ap/gpl/udhcpd"/>
+  <project name="unzip" location="ap/gpl/unzip60">
+    <exclude-dir name="amiga"/>
+  </project>
+  <project name="vendor_broadcom_router_base" location="src">
+    <include-dir name="^common"/>
+    <include-dir name="^et"/>
+    <include-dir name="^include"/>
+    <include-dir name="^makefiles"/>
+    <include-dir name="^shared"/>
+    <include-dir name="^tools/release"/>
+    <include-dir name="^wl"/>
+    <include-file name="^Makefile$"/>
+    <include-file name="^tools/misc/epi_ttcp.c"/>
+  </project>
+  <project name="vendor_broadcom_router" location="src/router">
+    <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|httpd|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)"/>
+    <include-dir name="^bcmupnp"/>
+    <include-dir name="^config" exclude-files="defconfig.*"/>
+    <include-dir name="^ctf"/>
+    <include-dir name="^dpsta"/>
+    <include-dir name="^emf" exclude-files="emfconf/emf,igsconf/igs"/>
+    <include-dir name="^fbwifi"/>
+    <include-dir name="^igd"/>
+    <include-dir name="^libbcm"/>
+    <include-dir name="^libbcmcrypto"/>
+    <include-dir name="^misc"/>
+    <include-dir name="^netconf"/>
+    <include-dir name="^nvram"/>
+    <include-dir name="^proxyarp"/>
+    <include-dir name="^rc"/>
+    <include-dir name="^shared"/>
+    <include-dir name="^ufsd"/>
+    <include-dir name="^usbprinter"/>
+    <include-dir name="^utelnetd" exclude-files="utelnetd$,Makefile.bak"/>
+    <include-dir name="^utils"/>
+    <include-dir name="^vmstat"/>
+    <include-file name="^arm-uclibc/compatible_r6300v2.txt"/>
+    <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
+    <include-file name="^compressed/Makefile"/>
+    <include-file name="^Makefile"/>
+  </project>
+  <project name="vendor_netgear_acos" location="ap/acos" symlinks="false">
+    <exclude-dir name="acos_nat"/>
+  </project>
+  <project name="vendor_netgear_router_l7filter" location="ap/gpl/l7filter">
+    <exclude-file name="^.l7_filter_main.o.flags$"/>
+  </project>
+  <project name="vendor_netgear_router_prebuilt" location="src/prebuilt/WW">
+    <include-dir name="^lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter"/>
+    <include-dir name="^lib/modules/2.6.36.4brcmarm\+/kernel/lib" exclude-files="libcrc32c.ko"/>
+    <include-dir name="^www"/>
+    <include-file name="^etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
+    <include-file name="^sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
+    <include-file name="^sbin/(dhcp6c_down|dhcp6c_up|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect)$"/>
+    <include-file name="^sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
+    <include-file name="^sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
+    <include-file name="^usr/bin/(taskset)$"/>
+    <include-file name="^usr/lib/(libbigballofmud.so.0|libnat.so)$"/>
+    <include-file name="^usr/local/share/foxconn_ca$"/>
+    <include-file name="^usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpsd.pem)$"/>
+    <include-file name="^usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
+    <include-file name="^usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
+  </project>
+  <project name="vendor_netgear_router_project" location="project" symlinks="false">
+    <!--copyfile src="ap/gpl/config.in" dest="ap/gpl/config.in"/>
+    <copyfile src="ap/gpl/config.mk" dest="ap/gpl/config.mk"/>
+    <copyfile src="ap/gpl/Makefile" dest="ap/gpl/Makefile"/-->
+    <include-file name="^gpl/(config.in|config.mk|Makefile)$"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/make_arm.sh" dest="gpl/curl-7.23.1/make_arm.sh"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/Makefile" dest="gpl/curl-7.23.1/Makefile"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/Makefile_arm" dest="gpl/curl-7.23.1/Makefile_arm"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/make.sh" dest="gpl/curl-7.23.1/make.sh"/>
+    <copy-file src="../ap/gpl/minidlna/Makefile" dest="gpl/minidlna/Makefile"/>
+    <copy-file src="../ap/gpl/samba4/Makefile" dest="gpl/samba4/Makefile"/>
+    <copy-file src="../ap/gpl/samba4/smb_lib.txt" dest="gpl/samba4/smb_lib.txt"/>
+    <copy-file src="components/opensource/linux/linux-2.6.36/.config_R6300v2" dest="linux-2.6.36/config_R6300v2"/>
+    <copy-file src="src/Makefile" dest="src/Makefile"/>
+    <!--copy-file src="../src/router/busybox-1.x/configs/bbconfig-router_R6300v2" dest="src/router/busybox-1.x/configs/bbconfig-router_R6300v2"/-->
+    <copy-file src="../src/router/.config" dest="src/router/config_R6300v2"/>
+    <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
+    <copy-file src="../R6300v2-V*_build_instructions.txt" dest="build_instructions.txt"/>
+  </project>
+  <project name="vendor_broadcom_router_tools" location="tools"/>
+  <project name="vlan" location="src/router/vlan">
+    <exclude-file name="^(vconfig|README.1ST)$"/>
+  </project>
+  <project name="wget" location="ap/gpl/wget-1.12">
+    <exclude-dir name=".deps"/>
+    <exclude-dir name="^autom4te.cache"/>
+    <exclude-dir name="^doc"/>
+    <exclude-dir name="m4"/>
+    <exclude-dir name="^msdos"/>
+    <exclude-dir name="^po"/>
+    <exclude-dir name="^tests"/>
+    <exclude-dir name="^util"/>
+    <exclude-dir name="^vms"/>
+    <exclude-file name="Makefile$"/>
+    <exclude-file name="Makefile.in$"/>
+    <exclude-file name="^(aclocal.m4|cfg.mk|config.h.in|config.log|config.status|configure)$"/>
+    <exclude-file name="^(.x-sc_po_check|.x-sc_trailing_blank|README.checkout)$"/>
+    <exclude-file name="^src/(config.h|config.h.in|css.c|stamp-h1)$"/>
+  </project>
+  <!--project name="xz" location="src/tools/misc/xz"-->
+  <project name="zeroconf" location="ap/gpl/zeroconf-0.9"/>
+  <project name="zip" location="ap/gpl/zip30">
+    <exclude-dir name="amiga"/>
+    <exclude-file name="unix/Makefile.bak"/>
+  </project>
+  <project name="zlib" location="ap/gpl/minidlna/zlib-1.2.3"/>
+</locations>
