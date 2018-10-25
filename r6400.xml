@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locations>
+  <include name="r6300v2.xml"/>
+
+  <project name="alsa-lib" location="ap/gpl/iserver/alsa-lib-1.0.26">
+    <exclude-dir name="^(autom4te.cache|modules/mixer/simple/python|test)$"/>
+    <exclude-file name="Makefile$|Makefile.in$"/>
+    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|include/stamp-h1|install-sh|libtool|ltconfig|ltmain.sh|missing|version)$"/>
+    <exclude-file name=".*\.pc|.*\.Plo|.*\.Po"/>
+    <exclude-file name="^(doc/doxygen.cfg|src/conf/cards/Loopback.conf|utils/alsa-lib.spec)$"/>
+    <exclude-file name="^include/(alsa|asoundlib.h|config.h|config.h.in|version.h)$"/>
+    <exclude-file name="^src/(Versions|control/ctl_symbols_list.c|pcm/pcm_symbols_list.c)$"/>
+  </project>
+  <project name="avahi" location="ap/gpl/iserver/avahi-0.6.25">
+    <exclude-dir name="^(autom4te.cache|common|docs|man|po|specs|tests)$"/>
+    <exclude-file name="funcs.txt|Makefile$|Makefile.in$"/>
+    <exclude-file name=".*\.Plo|.*\.Po"/>
+    <exclude-file name="^(ABOUT-NLS|aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|py-compile|stamp-h1)$"/>
+    <exclude-file name="^avahi-core/findstatic.pl$"/>
+  </project>
+  <project name="avl" location="ap/gpl/iserver/avl-0.3.5">
+    <include-file name="GNUmakefile"/>
+  </project>
+  <project name="bpalogin" location="ap/gpl/bpalogin"/>
+  <project name="cryptopp" location="ap/gpl/amule/libcryptoxx-5.6.0">
+    <include-file name="GNUmakefile"/>
+  </project>
+  <project name="forked-daapd" location="ap/gpl/iserver/forked-daapd-0.19">
+    <exclude-dir name="^m4$"/>
+    <exclude-file name="Makefile$|Makefile.in$|tags"/>
+    <exclude-file name=".*\gperf|.*\.Plo|.*\.Po|.*\u"/>
+    <exclude-file name="^src(/pregen){0,1}/(DAAP|DAAP2SQL|DAAPLexer|DAAPParser|RSP2SQL|RSPLexer|RSPParser)\.[ch]$"/>
+    <exclude-file name="^src/(daap_query_hash.c|dacp_prop_hash.c|dmap_fields_hash.c|rsp_query_hash.c)$"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="^(forked-daapd)$"/>
+  </project>
+  <project name="hd-idle" location="ap/gpl/hd-idle-1.04">
+    <exclude-file name="tags"/>
+  </project>
+  <project name="hdparm" location="ap/gpl/hdparm-9.43"/>
+  <project name="libconfuse" location="ap/gpl/iserver/confuse-2.7"/>
+  <project name="lua" location="ap/gpl/lua/source/src"/>
+  <project name="mxml" location="ap/gpl/iserver/mxml-2.7"/>
+  <project name="netatalk" location="ap/gpl/timemachine/netatalk-2.2.5">
+    <exclude-dir name="^(macros|man)$"/>
+    <exclude-file name="Makefile$|Makefile.bak$|Makefile.in$"/>
+    <exclude-file name=".*\.Plo|.*\.Po"/>
+    <exclude-file name="^(a|aclocal.m4|bootstrap|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="^(bin/cnid/cnid2_create)$"/>
+    <exclude-file name="^contrib/(macusers/macusers|shell_utils/apple_dump|shell_utils/asip-status.pl)$"/>
+    <exclude-file name="^distrib/config/netatalk-config$"/>
+    <exclude-file name="^etc/(afpd/auth.c.bak|afpd/volume.c.bak|cnid_dbd/config.h.in)$"/>
+    <exclude-file name="^files/(AppleVolumes.default|AppleVolumes.system|afpd.conf|afpd.init|detach_afp_shares)$"/>
+  </project>
+  <project name="transmission" location="ap/gpl/transmission/transmission-2.73">
+    <exclude-dir name="^(extra|m4|macosx|po)$"/>
+    <exclude-file name="(.*\.1|.*\.css|.*\.dox|.*\.jpg|.*\.png|.*\.svg)$"/>
+    <exclude-file name="Makefile.in$"/>
+    <exclude-file name="^(AUTHORS|COPYING|ChangeLog|INSTALL|NEWS|README|aclocal.m4|config\..*|configure|depcomp|install-sh|ltmain.sh)$"/>
+    <exclude-file name="^libtransmission/version.h$"/>
+  </project>
+  <!-- override the included config files -->
+  <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
+    <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
+    <include-dir name="^ap/acos$"/>
+    <include-dir name="^src/router/arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
+    <include-dir name="^lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
+    <include-dir name="^www$"/>
+    <include-dir name="^bcmupnp$"/>
+    <include-dir name="^config$" exclude-files="defconfig.*"/>
+    <include-dir name="^ctf$"/>
+    <include-dir name="^dpsta$"/>
+    <include-dir name="^emf$" exclude-files="emfconf/emf,igsconf/igs"/>
+    <include-dir name="^fbwifi$"/>
+    <include-dir name="^igd$"/>
+    <include-dir name="^libbcm$"/>
+    <include-dir name="^libbcmcrypto$"/>
+    <include-dir name="^misc$"/>
+    <include-dir name="^netconf$" exclude-files=".*\.o,.*\.so"/>
+    <include-dir name="^nvram$" exclude-files=".*\.o,.*\.so"/>
+    <include-dir name="^prebuilt"/>
+    <include-dir name="^proxyarp$"/>
+    <include-dir name="^rc$"/>
+    <include-dir name="^shared$" exclude-files=".*\.o,.*\.so"/>
+    <include-dir name="^ufsd$"/>
+    <include-dir name="^usbprinter$" exclude-files=".+_R.+\.ko"/>
+    <include-dir name="^utelnetd$" exclude-files="utelnetd.o,Makefile.bak"/>
+    <include-dir name="^utils$"/>
+    <include-dir name="^vmstat$" exclude-files="vmstat$,.*\.o"/>
+    <include-file name="^arm-uclibc/(compatible_r6400.txt|netgear-streaming-db)$"/>
+    <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
+    <include-file name="^arm-uclibc/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(dhcp6c_down|dhcp6c_up|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
+    <include-file name="^arm-uclibc/target/usr/bin/(taskset)$"/>
+    <include-file name="^arm-uclibc/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so)$"/>
+    <include-file name="^arm-uclibc/target/usr/local/share/foxconn_ca$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
+    <include-file name="^compressed/Makefile$"/>
+    <include-file name="^Makefile$"/>
+  </project>
+  <project name="vendor_netgear_router_project" location="project" symlinks="false" cleanup="true" override="true">
+    <include-file name="^gpl/(config.in|config.mk|Makefile)$"/>
+    <copy-file src="../ap/gpl/amule/Makefile" dest="gpl/amule/Makefile"/>
+    <copy-file src="../ap/gpl/curl/Makefile" dest="gpl/curl/Makefile"/>
+    <copy-file src="../ap/gpl/gsoap/Makefile" dest="gpl/gsoap/Makefile"/>
+    <copy-file src="../ap/gpl/iserver/edit_config_status.sh" dest="gpl/iserver/edit_config_status.sh"/>
+    <copy-file src="../ap/gpl/iserver/edit_makefile.sh" dest="gpl/iserver/edit_makefile.sh"/>
+    <copy-file src="../ap/gpl/iserver/list_config_status" dest="gpl/iserver/list_config_status"/>
+    <copy-file src="../ap/gpl/iserver/list_mk" dest="gpl/iserver/list_mk"/>
+    <copy-file src="../ap/gpl/iserver/Makefile" dest="gpl/iserver/Makefil"/>
+    <copy-file src="../ap/gpl/iserver/mount_filesys.sh" dest="gpl/iserver/mount_filesys.sh"/>
+    <copy-file src="../ap/gpl/iserver/start_forked-daapd.sh" dest="gpl/iserver/start_forked-daapd.sh"/>
+    <copy-file src="../ap/gpl/lua/Makefile" dest="gpl/lua/Makefile"/>
+    <copy-file src="../ap/gpl/minidlna/Makefile" dest="gpl/minidlna/Makefile"/>
+    <copy-file src="../ap/gpl/samba4/Makefile" dest="gpl/samba4/Makefile"/>
+    <copy-file src="../ap/gpl/samba4/smb_lib.txt" dest="gpl/samba4/smb_lib.txt"/>
+    <copy-file src="../ap/gpl/timemachine/Makefile" dest="gpl/timemachine/Makefile"/>
+    <copy-file src="../ap/gpl/transmission/Makefile" dest="gpl/transmission/Makefile"/>
+    <copy-file src="components/opensource/linux/linux-2.6.36/.config_R6400" dest="linux-2.6.36/config_R6400"/>
+    <copy-file src="src/Makefile" dest="src/Makefile"/>
+    <copy-file src="../src/router/.config" dest="src/router/config_R6400"/>
+    <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
+    <copy-file src="../R6400-V*_build_instructions.txt" dest="build_instructions.txt"/>
+  </project>
+  <project name="wakelan" location="ap/gpl/timemachine/netatalk-utility"/>
+</locations>
