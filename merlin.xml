@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations>
+  <project name="6relayd" location="release/src-rt-6.x.4708/router/6relayd">
+    <exclude-file name=".*\.o"/>
+    <exclude-file name="^src/6relayd$"/>
+  </project>
+  <project name="accel-pptp" location="release/src-rt-6.x.4708/router/accel-pptpd">
+    <exclude-dir name="^(pppd_plugin|kernel)$"/>
+    <exclude-file name="NEWS|README|TODO|news|readme|todo"/>
+    <subdir name="pppd_plugin" location="release/src-rt-6.x.4708/router/accel-pptp" symlinks="true">
+      <exclude-dir name="^(\.deps|\.libs)$"/>
+      <exclude-file name=".*\.o|.*\.lo"/>
+    </subdir>
+  </project>
+  <project name="avahi" location="release/src-rt-6.x.4708/router/avahi-0.6.31">
+    <exclude-dir name="^(common|docs|man|po|specs|tests)$"/>
+    <exclude-dir name="^(avahi-sharp|avahi-ui-sharp)/en$"/>
+    <exclude-file name="(Makefile.in|ChangeLog|.*\.m4)"/>
+    <exclude-file name="^(ABOUT-NLS|compile|config\..*|configure|depcomp|install.sh|ltmain.sh|missing|py-compile)$"/>
+    <exclude-file name="(funcs.txt|.*\.pl|.*\.py|.*\.xml)$"/>
+  </project>
+  <project name="bridge-utils" location="release/src-rt-6.x.4708/router/bridge">
+    <exclude-file name="^(aclocal.m4|configure)$"/>
+  </project>
+  <project name="busybox" location="release/src-rt-6.x.4708/router/busybox">
+    <exclude-file name="^(config_base|VERSION)$"/>
+  </project>
+  <project name="comgt" location="release/src-rt-6.x.4708/router/comgt-0.32"/>
+  <project name="dnsmasq" location="release/src-rt-6.x.4708/router/dnsmasq">
+    <exclude-dir name="^debian$"/>
+    <exclude-file name="^VERSION$"/>
+  </project>
+  <project name="dproxy" location="release/src-rt-6.x.4708/router/dproxy"/>
+  <project name="easy-rsa" location="release/src-rt-6.x.4708/router/openvpn/easy-rsa/2.0" subdir="easy-rsa/2.0"/>
+  <project name="dropbear" location="release/src-rt-6.x.4708/router/dropbear">
+    <exclude-file name="^(config.h.in|configure|.hg_archival.txt)$"/>
+  </project>
+  <project name="ebtables" location="release/src-rt-6.x.4708/router/ebtables"/>
+  <project name="eMail" location="release/src-rt-6.x.4708/router/email-3.1.3">
+    <exclude-dir name="^(autom4te.cache|dlib)$"/>
+    <exclude-file name="^(include/config.h|configure|email.1|email.help|make_dist)$"/>
+  </project>
+  <project name="ez-ipupdate" location="release/src-rt-6.x.4708/router/ez-ipupdate">
+    <exclude-file name="^(config.h|Makefile)$"/>
+  </project>
+  <project name="forked-daapd" location="release/src-rt-6.x.4708/router/mt-daapd">
+    <exclude-file name="Makefile.in|^src/tags$"/>
+  </project>
+  <project name="hostap-06" location="release/src-rt-6.x.4708/router/wpa_supplicant">
+    <exclude-dir name="^(eap_example|hostapd|mac80211_hwsim|radius_example|testing|wpa_supplicant/vs2005|wpa_supplicant/wpa_gui-qt4|www)$"/>
+    <exclude-file name="^(wpa_supplicant/.config|build_nsis.sh|build_release|FAQ)$"/>
+  </project>
+  <project name="hotplug2" location="release/src-rt-6.x.4708/router/hotplug2"/>
+  <project name="hub-ctrl" location="release/src-rt-6.x.4708/router/hub-ctrl"/>
+  <project name="igmpproxy" location="release/src-rt-6.x.4708/router/igmpproxy">
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|INSTALL|install-sh|missing)$"/>
+  </project>
+  <project name="iptables" location="release/src-rt-6.x.4708/router/iptables-1.4.x">
+    <exclude-dir name="^(l7-protocols|m4)$"/>
+    <exclude-file name="^(compile|depcomp|install-sh|missing)$"/>
+  </project>
+  <project name="l7-protocols" location="release/src-rt-6.x.4708/router/layer7/protocols"/>
+  <project name="libusb" location="release/src-rt-6.x.4708/router/libusb10">
+  <project name="libubox" location="release/src-rt-6.x.4708/router/uqmi/libubox"/>
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|autogen.sh|ChangeLog|compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing|README)$"/>
+  </project>
+  <project name="libusb-compat" location="release/src-rt-6.x.4708/router/libusb">
+    <exclude-dir name="^m4$"/>
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|autogen.sh|ChangeLog|compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing|README)$"/>
+  </project>
+  <project name="lighttpd" location="release/src-rt-6.x.4708/router/lighttpd-1.4.39">
+    <exclude-dir name="^(cmake|doc|external_file|m4|tests)$"/>
+    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|ar-lib|compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing|packdist.sh|preconfigure.*)$"/>
+  </project>
+  <project name="lprng" location="release/src-rt-6.x.4708/router/LPRng">
+   <exclude-dir name="^(working_binaries|po|DISTRIBUTIONS)$"/>
+   <exclude-file name="Makefile$"/>
+   <exclude-file name="^(lpd_STATFS|lpd.perms|libtool|hfA018|config.status|config.log|CONFIG_JW|config.h|src/.cfg)$"/>
+  </project>
+  <project name="mDNSResponder" location="release/src-rt-6.x.4708/router/mDNSResponder">
+    <exclude-file name="^Clients/PrinterSetupWizard/res/Thumbs.db$"/>
+  </project>
+  <project name="ministun" location="release/src-rt-6.x.4708/router/ministun"/>
+  <project name="neon" location="release/src-rt-6.x.4708/router/neon">
+    <exclude-dir name="^(doc|po)$"/>
+    <exclude-file name="^(.built|.configured|.version|aclocal.m4|ChangeLog|config\..*|configure|install-sh|ltmain.sh)$"/>
+  </project>
+  <project name="miniupnp">
+    <subdir name="miniupnpd" location="release/src-rt-6.x.4708/router/miniupnpd"/>
+    <subdir name="miniupnpc" location="release/src-rt-6.x.4708/router/miniupnpc"/>
+  </project>
+  <project name="Netatalk" location="release/src-rt-6.x.4708/router/netatalk-3.0.5">
+    <exclude-dir name="^bin/megatron|contrib/misc|doc|libatalk/(locking|pap)|libevent/test|man$"/>
+    <exclude-file name="Makefile.in|configure|config.h.in"/>
+    <exclude-file name="(.*\.abi|.*\.m4)$"/>
+    <exclude-file name="^abigen.sh|bootstrap|libevent/(evdns.3|event.3)$"/>
+    <exclude-file name="^(compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing)$"/>
+  </project>
+  <project name="net-snmp" location="release/src-rt-6.x.4708/router/net-snmp-5.7.2">
+    <exclude-dir name="^man|win32$"/>
+    <exclude-file name="agent/versiontag"/>
+  </project>
+  <project name="netstat-nat" location="release/src-rt-6.x.4708/router/netstat-nat"/>
+  <project name="nfs-utils" location="release/src-rt-6.x.4708/router/nfs-utils">
+    <exclude-file name="^compile$"/>
+    <exclude-file name="support/lib/Makefile$"/>
+  </project>
+  <project name="ntpclient" location="release/src-rt-6.x.4708/router/ntpclient"/>
+  <project name="odhcp6c" location="release/src-rt-6.x.4708/router/odhcp6c"/>
+  <project name="OpenPAM" location="release/src-rt-6.x.4708/router/openpam">
+    <exclude-dir name="^(doc|m4|misc)$"/>
+    <exclude-file name="^(aclocal.m4|autogen.des|compile|config\..*|depcomp|install-sh|ltmain.sh|missing|test-driver)$"/>
+  </project>
+  <project name="phddns" location="release/src-rt-6.x.4708/router/phddns"/>
+  <project name="pjproject" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12">
+    <exclude-dir name="bin|lib|output"/>
+    <exclude-dir name="third_party/(bzip2|portaudio|umem|usrsctp)$"/>
+    <exclude-file name="cc-auto.mak|os-auto.mak"/>
+  </project>
+  <project name="portmap" location="release/src-rt-6.x.4708/router/portmap">
+    <exclude-file name=".depend"/>
+  </project>
+  <project name="ppp" location="release/src-rt-6.x.4708/router/pppd"/>
+  <project name="rp-l2tp" location="release/src-rt-6.x.4708/router/rp-l2tp">
+    <exclude-file name="^config\..*$"/>
+  </project>
+  <project name="rp-pppoe" location="release/src-rt-6.x.4708/router/rp-pppoe"/>
+  <project name="samba" location="release/src-rt-6.x.4708/router/samba-3.6.x">
+    <exclude-dir name="^(docs|docs-xml|examples/VFS|packaging)$"/>
+    <exclude-dir name="^source3/librpc/gen_ndr$"/>
+    <exclude-dir name="^source4/(heimdal/lib/wind|ldap_server/devdocs)$"/>
+    <exclude-file name="^source3/include/(config.h.in|version.h)$"/>
+  </project>
+  <project name="udt4" location="release/src-rt-6.x.4708/router/asusnatnl/udt"/>
+  <project name="Uqmi" location="release/src-rt-6.x.4708/router/uqmi" strict="true">
+    <exclude-dir name="^libubox$"/>
+  </project>
+  <project name="vsftpd" location="release/src-rt-6.x.4708/router/vsftpd"/>
+  <project name="vendor_broadcom_router_base" location="release/src-rt-6.x.4708">
+    <include-dir name="^(bcm57xx|bcmcrypto|bcm_tools|btools)$"/>
+    <include-dir name="^cfe$" exclude-files="t2b/t2b$"/>
+    <include-dir name="^(common|et|include|makefiles|ntools|rts|shared)$"/>
+    <include-dir name="^wl/(clm|config|exe|sysdeps/RT-AC68U)$"/>
+    <include-dir name="^wps$"/>
+    <include-file name="^tools/(misc/epi_ttcp.c|release/WLAN.usf)$"/>
+    <include-file name="^(platform.mak|profile.mak)$"/>
+    <copy-file src="../src-rt/Makefile" dest="Makefile"/>
+    <copy-file src="../src-rt/target.mak" dest="target.mak"/>
+    <copy-file src="../src-rt/version.conf" dest="version.conf"/>
+  </project>
+  <project name="vendor_broadcom_router" location="release/src-rt-6.x.4708/router" symlinks="true">
+    <include-dir name="^aaews$" exclude-dirs="^prebuild$"/>
+    <include-dir name="^acsd_arm$" exclude-files="^prebuilt/acsd_qtn$"/>
+    <include-dir name="^APP-IPK$"/>
+    <include-dir name="^asuswebstorage_arm$" files="Makefile$,prebuild/asuswebstorage$"/>
+    <include-dir name="^bled$"/>
+    <include-dir name="^bwdpi$" exclude-dirs="prebuilt_qtn$"/>
+    <include-dir name="^bwdpi_bin$" exclude-dirs="bwdpi_bcm7$,bwdpi_bcm7114$"/>
+    <include-dir name="^bwdpi_sqlite$" exclude-dirs="prebuilt_qtn$"/>
+    <include-dir name="^cloudcheck$" dirs="broadcom_arm$$" files="Makefile$"/>
+    <include-dir name="^comad$"/>
+    <include-dir name="^compressed$"/>
+    <include-dir name="^config$" exclude-files="defconfig.*,Config"/>
+    <include-dir name="^cstats$"/>
+    <include-dir name="^(dhd|dhd_monitor)$"/>
+    <include-dir name="^dropbox_client$" exclude-dirs="prebuild$"/>
+    <include-dir name="^eapd_arm$" files="linux/Makefile$,linux/prebuilt/eapd$"/>
+    <include-dir name="^envram_bin$"/>
+    <include-dir name="^(et|et_arm)$"/>
+    <include-dir name="^ftpclient$" exclude-dirs="prebuild$"/>
+    <include-dir name="^httpd$" exclude-dirs="prebuild/models/RT-(AC3100|AC3200|AC5300|AC56U|AC66U|AC87U|AC88U|N66U)$"/>
+    <include-dir name="^igmp$"/>
+    <include-dir name="^infosvr$"/>
+    <include-dir name="^inotify$" exclude-dirs="prebuild$"/>
+    <include-dir name="^lacp$"/>
+    <include-dir name="^lanauth$"/>
+    <include-dir name="^libbcm$" files="Makefile,README,prebuilt_arm/libbcm.so$"/>
+    <include-dir name="^libbcmcrypto$" dirs="prebuilt.arm$" files="Makefile$"/>
+    <include-dir name="^libdisk$"/>
+    <include-dir name="^libnmp$" dirs="prebuilt$" files="^Makefile$,^nmp.h$"/>
+    <include-dir name="^libupnp$" dirs="^prebuilt_arm$" files="^Makefile$"/>
+    <include-dir name="^lighttpd-1.4.39/external_file$"/>
+    <include-dir name="^lldt$"/>
+    <include-dir name="^(lltd.arm|lltdc)$"/>
+    <include-dir name="^mssl$"/>
+    <include-dir name="^nas_arm$" exclude-files="nas/prebuilt/nas_qtn"/>
+    <include-dir name="^netconf$"/>
+    <include-dir name="^networkmap$"/>
+    <include-dir name="^nt_center$"/>
+    <include-dir name="^(nvram|nvram_arm)$"/>
+    <include-dir name="^others$"/>
+    <include-dir name="^protect_srv$"/>
+    <include-dir name="^proxyarp$"/>
+    <include-dir name="^push_log$"/>
+    <include-dir name="^rc$" exclude-dirs="prebuild/models/RT-(AC3100|AC3200|AC5300|AC56U|AC66U|AC87U|AC88U|N66U)$"/>
+    <include-dir name="^rom$" exclude-dirs="wlan$" exclude-files="packages/asus_base_apps_mipsel.tgz"/>
+    <include-dir name="^rstats$"/>
+    <include-dir name="^rtl_bin$"/>
+    <include-dir name="^sambaclient" files="Makefile,prebuild_arm/sambaclient"/>
+    <include-dir name="^scsi-idle$"/>
+    <include-dir name="^sd-idle$"/>
+    <include-dir name="^shared$" dirs="bcmcrypto,prebuild/models/RT-AC68U,sysdeps" files="[^/]+$"/>
+    <include-dir name="^snooper$"/>
+    <include-dir name="^taskset$"/>
+    <include-dir name="^tftp$"/>
+    <include-dir name="^toad$"/>
+    <include-dir name="^tools$"/>
+    <include-dir name="^traffic_limiter$"/>
+    <include-dir name="^tuxera$" dirs="broadcom_arm" files="Makefile"/>
+    <include-dir name="^u2ec$" dirs="prebuild_arm" files="Makefile"/>
+    <include-dir name="^ufsd$" dirs="prebuild_arm" files="Makefile"/>
+    <include-dir name="^usbclient$"/>
+    <include-dir name="^(utils|utils_arm)$"/>
+    <include-dir name="^wb$" exclude-files="prebuild/libws.so$"/>
+    <include-dir name="^webdav_client_arm$" exclude-files="prebuilt/webdav_client_qtn$"/>
+    <include-dir name="^wl_arm$" dirs="RT-AC68U" files="Makefile"/>
+    <include-dir name="^wlconf_arm$" files="Makefile$,prebuilt/wlconf$"/>
+    <include-dir name="^wps_arm$" exclude-files="prebuilt/wps_monitor_qtn"/>
+    <include-dir name="^wtfast$" exclude-dirs="libev-4.20" exclude-files="gpnrd/gpnrd$,wtfd/wtfd$,wtfslhd/wtfslhd$"/>
+    <include-dir
+      name="^www$"
+      dirs="aidisk,ajax,calendar,css,device-map,images,js,qis,qis_m,require,svghtc,switcherplugin,userRpm,sysdep/downsizeImages,sysdep/RT-AC68U,sysdep/RT-AC55U/www/qis"
+      files="[^/]+$,sysdep/RT-AC55U/www/images/New_ui/new_qis/ISP-card.png,sysdep/RT-AC55U/www/images/New_ui/new_qis/PPPoE.png,sysdep/RT-AC55U/www/images/New_ui/new_qis/staticIP.png,sysdep/RT-N66U/www/js/support_site.js,sysdep/RT-AC66U/www/Advanced_Wireless_Content.asp,sysdep/RT-AC66U/www.chanspec.js"/>
+    <include-file name="^(common.mak|Makefile.*)$"/>
+    <include-file name="^README$"/>
+    <link-file src="libupnp" dest="libupnp_arm"/>
+  </project>
+</locations>
