@@ -145,8 +145,9 @@
     <include-dir name="^wl/(clm|config|exe|sysdeps/RT-AC68U)$"/>
     <include-dir name="^wps$"/>
     <include-file name="^tools/(misc/epi_ttcp.c|release/WLAN.usf)$"/>
-    <include-file name="^(platform.mak|profile.mak)$"/>
+    <include-file name="^profile.mak$"/>
     <copy-file src="../src-rt/Makefile" dest="Makefile"/>
+    <copy-file src="../src-rt/platform.mak" dest="platform.mak"/>
     <copy-file src="../src-rt/target.mak" dest="target.mak"/>
     <copy-file src="../src-rt/version.conf" dest="version.conf"/>
   </project>
