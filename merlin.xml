@@ -40,9 +40,7 @@
     <exclude-dir name="^(autom4te.cache|dlib)$"/>
     <exclude-file name="^(include/config.h|configure|email.1|email.help|make_dist)$"/>
   </project>
-  <project name="ez-ipupdate" location="release/src-rt-6.x.4708/router/ez-ipupdate">
-    <exclude-file name="^(config.h|Makefile)$"/>
-  </project>
+  <project name="ez-ipupdate" location="release/src-rt-6.x.4708/router/ez-ipupdate"/>
   <project name="forked-daapd" location="release/src-rt-6.x.4708/router/mt-daapd">
     <exclude-file name="Makefile.in|^src/tags$"/>
   </project>
