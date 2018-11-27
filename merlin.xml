@@ -25,6 +25,7 @@
   <project name="busybox" location="release/src-rt-6.x.4708/router/busybox">
     <exclude-file name="^(config_base|VERSION)$"/>
   </project>
+  <project name="bzip2" path="vendor/asus/router/asusnatnl/pjproject-1.12/third_party/bzip2" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12/third_party/bzip2"/>
   <project name="comgt" location="release/src-rt-6.x.4708/router/comgt-0.32"/>
   <project name="dnsmasq" location="release/src-rt-6.x.4708/router/dnsmasq">
     <exclude-dir name="^debian$"/>
@@ -114,10 +115,12 @@
     <exclude-file name="^(aclocal.m4|autogen.des|compile|config\..*|depcomp|install-sh|ltmain.sh|missing|test-driver)$"/>
   </project>
   <project name="phddns" location="release/src-rt-6.x.4708/router/phddns"/>
-  <project name="pjproject" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12">
-    <exclude-dir name="bin|lib|output"/>
+  <project name="portaudio" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12/third_party/portaudio">
+    <exclude-dir name="^(bindings|doc|test)$"/>
+    <include-file name="^src/(hostapi/oss/pa_unix_oss.c|os/unix/pa_unix_util.c)$"/>
+  </project>
+  <project name="pjproject" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12" strict="true">
     <exclude-dir name="third_party/(bzip2|portaudio|umem|usrsctp)$"/>
-    <exclude-file name="cc-auto.mak|os-auto.mak"/>
   </project>
   <project name="portmap" location="release/src-rt-6.x.4708/router/portmap">
     <exclude-file name=".depend"/>
@@ -134,9 +137,14 @@
     <exclude-file name="^source3/include/(config.h.in|version.h)$"/>
   </project>
   <project name="udt4" location="release/src-rt-6.x.4708/router/asusnatnl/udt"/>
+  <project name="umem" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12/third_party/umem">
+    <exclude-file name="^(aclocal.m4|autogen.sh|config\..*|configure|depcomp|Doxyfile|INSTALL|install-sh|libtool|ltmain.sh|Makefile.in|missing)$"/>
+    <exclude-file name="^(1|gdb-macros|README-alpha|umem.spec|.*\.a|.*\.la|.*\.lo)$"/>
+  </project>
   <project name="Uqmi" location="release/src-rt-6.x.4708/router/uqmi" strict="true">
     <exclude-dir name="^libubox$"/>
   </project>
+  <project name="usrsctp" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12/third_party/usrsctp"/>
   <project name="vsftpd" location="release/src-rt-6.x.4708/router/vsftpd"/>
   <project name="vendor_broadcom_router_base" location="release/src-rt-6.x.4708">
     <include-dir name="^(bcm57xx|bcmcrypto|bcm_tools|btools)$"/>
@@ -155,6 +163,8 @@
     <include-dir name="^aaews$" exclude-dirs="^prebuild$"/>
     <include-dir name="^acsd_arm$" exclude-files="^prebuilt/acsd_qtn$"/>
     <include-dir name="^APP-IPK$"/>
+    <include-dir name="^asusnatnl/docs$"/>
+    <include-dir name="^asusnatnl/natnl$" exclude-dirs="prebuild"/>
     <include-dir name="^asuswebstorage_arm$" files="Makefile$,prebuild/asuswebstorage$"/>
     <include-dir name="^bled$"/>
     <include-dir name="^bwdpi$" exclude-dirs="prebuilt_qtn$"/>
@@ -226,6 +236,7 @@
       files="[^/]+$,sysdep/RT-AC55U/www/images/New_ui/new_qis/ISP-card.png,sysdep/RT-AC55U/www/images/New_ui/new_qis/PPPoE.png,sysdep/RT-AC55U/www/images/New_ui/new_qis/staticIP.png,sysdep/RT-N66U/www/js/support_site.js,sysdep/RT-AC66U/www/Advanced_Wireless_Content.asp,sysdep/RT-AC66U/www.chanspec.js"/>
     <include-file name="^(common.mak|Makefile.*)$"/>
     <include-file name="^README$"/>
+    <include-file name="^asusnatnl/(Makefile|Release.bat|release_note.txt|version.mak)$"/>
     <link-file src="libupnp" dest="libupnp_arm"/>
   </project>
 </locations>
