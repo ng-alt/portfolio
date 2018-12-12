@@ -195,6 +195,7 @@
     <include-dir name="^libbcmcrypto$"/>
     <include-dir name="^misc$"/>
     <include-dir name="^netconf$" exclude-files=".*\.o,.*\.so"/>
+    <include-dir name="^new_opencrt"/>
     <include-dir name="^nvram$" exclude-files=".*\.o,.*\.so"/>
     <include-dir name="^proxyarp$"/>
     <include-dir name="^rc$"/>
