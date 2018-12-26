@@ -41,7 +41,7 @@
   <project name="libconfuse" location="ap/gpl/iserver/confuse-2.7"/>
   <project name="lua" location="ap/gpl/lua/source/src"/>
   <project name="mxml" location="ap/gpl/iserver/mxml-2.7"/>
-  <project name="netatalk" location="ap/gpl/timemachine/netatalk-2.2.5">
+  <project name="Netatalk" location="ap/gpl/timemachine/netatalk-2.2.5">
     <exclude-dir name="^(macros|man)$"/>
     <exclude-file name="Makefile$|Makefile.bak$|Makefile.in$"/>
     <exclude-file name=".*\.Plo|.*\.Po"/>
