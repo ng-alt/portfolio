@@ -50,7 +50,8 @@
     <exclude-file name="^contrib/(macusers/macusers|shell_utils/apple_dump|shell_utils/asip-status.pl)$"/>
     <exclude-file name="^distrib/config/netatalk-config$"/>
     <exclude-file name="^etc/(afpd/auth.c.bak|afpd/volume.c.bak|cnid_dbd/config.h.in)$"/>
-    <exclude-file name="^files/(AppleVolumes.default|AppleVolumes.system|afpd.conf|afpd.init|detach_afp_shares)$"/>
+    <exclude-file name="^files/(afpd.conf|AppleVolumes.default|AppleVolumes.system|afpd.init|detach_afp_shares)$"/>
+    <copy-file src="files/afpd.conf" dest="config/afpd.conf.tmpl"/>
   </project>
   <project name="transmission" location="ap/gpl/transmission/transmission-2.73">
     <exclude-dir name="^(extra|m4|macosx|po)$"/>
