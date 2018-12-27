@@ -62,11 +62,13 @@
   </project>
   <!-- override the included config files -->
   <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
-    <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
     <include-dir name="^ap/acos$"/>
-    <include-dir name="^src/router/arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
-    <include-dir name="^lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
-    <include-dir name="^www$"/>
+    <include-dir name="^arm-uclibc/install/(eapd|emf|gbsd|gpio|hotplug2/etc|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
+    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
+    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
+    <include-dir name="^arm-uclibc/target/usr/local/share/foxconn_ca$"/>
+    <include-dir name="^arm-uclibc/target/usr/share/new_opencrt"/>
+    <include-dir name="^arm-uclibc/target/(opt|www)$"/>
     <include-dir name="^bcmupnp$"/>
     <include-dir name="^config$" exclude-files="defconfig.*"/>
     <include-dir name="^ctf$"/>
@@ -91,15 +93,17 @@
     <include-file name="^arm-uclibc/(compatible_r6400.txt|netgear-streaming-db)$"/>
     <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
     <include-file name="^arm-uclibc/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
-    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
+    <include-file name="^arm-uclibc/target/sbin/abFifo$"/>
+    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burn_sw_feature|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
     <include-file name="^arm-uclibc/target/sbin/(dhcp6c_down|dhcp6c_up|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect)$"/>
-    <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|internet|ipv6-conntab|ipv6_drop_all_pkt|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|mpstat|parser|read_bd|reset_no_reboot|restart_all_processes|system)$"/>
     <include-file name="^arm-uclibc/target/sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
     <include-file name="^arm-uclibc/target/usr/bin/(taskset)$"/>
-    <include-file name="^arm-uclibc/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so)$"/>
-    <include-file name="^arm-uclibc/target/usr/local/share/foxconn_ca$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
+    <include-file name="^arm-uclibc/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so|libreadycloud.so|rclibrary.so)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(acl_logd|acs_cli|acsd|arp_check|autoipd|brctl|ca.pem|check_db|check_fw|cli|ddnsd|debug_logd|detach_afp_shares|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|gproxy|heartbeat|httpd|httpsd.pem)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(cp_checkbox.sh|cp_installer.sh|cp_platform.sh)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lcli|lld2d|lld2d.conf|lld2test|lld_xbox|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(qos_test|readycloud_unregister|remote_share_conf|remote_smb_conf|remote_user_conf|speedtest|usb_disk_port|video_streaming)$"/>
     <include-file name="^arm-uclibc/target/usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
     <include-file name="^compressed/Makefile$"/>
     <include-file name="^Makefile$"/>
