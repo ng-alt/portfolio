@@ -75,6 +75,7 @@
     <exclude-file name="Makefile.in"/>
     <exclude-file name="^(aclocal.m4|ar-lib|compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing|packdist.sh|preconfigure.*)$"/>
   </project>
+  <project name="linux" location="release/src-rt-6.x.4708/linux/linux-2.6.36"/>
   <project name="lprng" location="release/src-rt-6.x.4708/router/LPRng">
    <exclude-dir name="^(working_binaries|po|DISTRIBUTIONS)$"/>
    <exclude-file name="Makefile$"/>
