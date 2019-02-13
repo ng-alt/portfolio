@@ -11,6 +11,7 @@
     <exclude-file name="^include/(alsa|asoundlib.h|config.h|config.h.in|version.h)$"/>
     <exclude-file name="^src/(Versions|control/ctl_symbols_list.c|pcm/pcm_symbols_list.c)$"/>
   </project>
+  <!-- avahi in ap/gpl/timemachine/avahi-0.6.25 is not checked but used -->
   <project name="avahi" location="ap/gpl/iserver/avahi-0.6.25">
     <exclude-dir name="^(autom4te.cache|common|docs|man|po|specs|tests)$"/>
     <exclude-file name="funcs.txt|Makefile$|Makefile.in$"/>
@@ -28,10 +29,10 @@
   <project name="forked-daapd" location="ap/gpl/iserver/forked-daapd-0.19">
     <exclude-dir name="^m4$"/>
     <exclude-file name="Makefile$|Makefile.in$|tags"/>
-    <exclude-file name=".*\gperf|.*\.Plo|.*\.Po|.*\u"/>
+    <exclude-file name="(.*\.Plo|.*\.Po|.*\u)$"/>
     <exclude-file name="^src(/pregen){0,1}/(DAAP|DAAP2SQL|DAAPLexer|DAAPParser|RSP2SQL|RSPLexer|RSPParser)\.[ch]$"/>
     <exclude-file name="^src/(daap_query_hash.c|dacp_prop_hash.c|dmap_fields_hash.c|rsp_query_hash.c)$"/>
-    <exclude-file name="^(aclocal.m4|compile|config\..*|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
     <exclude-file name="^(forked-daapd)$"/>
   </project>
   <project name="hd-idle" location="ap/gpl/hd-idle-1.04">

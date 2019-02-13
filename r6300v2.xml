@@ -4,6 +4,7 @@
     <exclude-file name="Makefile$"/>
     <exclude-file name="^(aclocal.m4|configure)$"/>
     <exclude-file name="(brctl/brctl|libbridge/config.h)$"/>
+    <exclude-file name="(.*\.a|.*\.o)$"/>
   </project>
   <project name="bftpd" location="ap/gpl/bftpd-1.6.6">
     <exclude-file name="^(.*.o|mksources.finished|bftpd)$"/>
@@ -46,8 +47,11 @@
     <exclude-file name="^doc/FLAC.tag"/>
     <exclude-file name="^man/manpage.*"/>
     <exclude-file name="^src/(libFLAC/ia32/lpc_asm-unrolled.nasm|test_libFLAC/matrix)$"/>
-    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|install-sh|ltmain.sh|missing|mkinstalldirs)$"/>
-    <exclude-file name="Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|install-sh|libtool|libtool-disable-static|ltmain.sh|missing|mkinstalldirs|stamp-h1)$"/>
+    <exclude-file name="(Makefile.in|Makefile)$"/>
+    <exclude-file name="(.*\.a|.*\.la|.*\.lai|.*\.lo|.*\.o|.*\.pc|.*\.Plo|.*\.Po|.*\.so.*)$"/>
+    <exclude-file name="(example_c.*_.*code_file|test_.*)$"/>
+    <exclude-file name="^src/(flac/.libs/flac|flac/flac|metaflac/.libs/metaflac|metaflac/metaflac)$"/>
   </project>
   <project name="flex" location="src/router/flex">
     <exclude-dir name="^MISC"/>
@@ -85,10 +89,12 @@
     <exclude-file name="^(Makefile|config\..*|libtool|msvc\+\+/Makefile|stamp-h1)$"/>
   </project>
   <project name="libvorbis" location="ap/gpl/minidlna/libvorbis-1.2.3">
-    <exclude-dir name="^(autom4te.cache|debian|doc)$"/>
-    <exclude-file name="Makefile.in"/>
+    <exclude-dir name="^(autom4te.cache|debian|doc|examples)$"/>
+    <exclude-file name="(Makefile.in|Makefile)$"/>
     <exclude-file name="^lib/misc.c$"/>
-    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|ltmain.sh|missing)$"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="(.*\.a|.*\.la.*|.*\.lo|.*\.o|.*\.pc|.*\.Plo|.*\.Po|.*\.so.*|.*\.spec)$"/>
+    <exclude-file name="^(test/test|lib/test_sharedbook|test/.libs/test)$"/>
   </project>
   <project name="linux" location="components/opensource/linux/linux-2.6.36">
     <exclude-dir name="^include/(config|generated)"/>
@@ -148,7 +154,7 @@
     <exclude-dir name="^(aix4|freebsd-.*|linux|netbsd-.*|NeXT|osf1|sunos4|svr4|ultrix)$"/>
     <exclude-file name="Makefile.*"/>
     <exclude-file name="^(README.*|TODO$|ppp.texi)$"/>
-    <exclude-file name="^pppd/(pppd|sys-.*)$"/>
+    <exclude-file name="^pppd/(pppd|sys-aix4.c|sys-bsd.c|sys-NeXT.c|sys-osf.c|sys-sunos4.c|sys-svr4.c|sys-ultrix.c)$"/>
     <exclude-file name="^.*.o$"/>
   </project>
   <project name="pppoe" location="ap/gpl/pppoecd">
@@ -169,8 +175,10 @@
     <exclude-file name="^(ripd/ripd|zebra/zebra)$"/>
   </project>
   <project name="radvd" location="ap/gpl/radvd">
-    <exclude-file name="^(aclocal.m4|config.h.in|configure|Makefile.in)$"/>
-    <exclude-file name="^(gram.c|gram.h|scanner.c)$"/>
+    <exclude-file name="^(aclocal.m4|config.h.in|configure|Makefile.in|stamp-h1)$"/>
+    <exclude-file name="^(Makefile|config.h|config.log|config.status)$"/>
+    <exclude-file name="^(gram.c|gram.h|scanner.c|radvd|radvdump)$"/>
+    <exclude-file name="(.*\.o|.*\.Po|.*\.[58])$"/>
   </project>
   <project name="samba" location="ap/gpl/samba-3.0.13|ap/gpl/samba-3.0.25b|ap/gpl/samba4/samba-4.4.3">
     <exclude-dir name="^(docs|examples|packaging|source/bin)$"/>
@@ -189,7 +197,7 @@
     <exclude-file name="^(config\..*)$"/>
   </project>
   <project name="squashfs-tools" location="src/router/squashfs-4.2">
-    <exclude-file name="^mksquashfs$"/>
+    <exclude-file name="^(.*\.o|mksquashfs)$"/>
   </project>
   <project name="udev" location="src/router/udev">
     <exclude-file name="udevtrigger|vol_id|udev_version.h|.*\.a|.*\.o|.*\.pc|.*\.so.*"/>
