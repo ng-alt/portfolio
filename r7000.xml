@@ -13,7 +13,6 @@
     <include-dir name="^config$" exclude-files="defconfig.*"/>
     <include-dir name="^ctf$"/>
     <include-dir name="^dpsta$"/>
-    <include-dir name="^emf$" exclude-files="emfconf/emf,igsconf/igs"/>
     <include-dir name="^fbwifi$"/>
     <include-dir name="^igd$"/>
     <include-dir name="^libbcm$"/>
@@ -49,7 +48,10 @@
   <project name="vendor_netgear_router_project" location="project" symlinks="false" cleanup="true" override="true">
     <include-file name="^gpl/(config.in|config.mk|Makefile)$"/>
     <copy-file src="../ap/gpl/amule/Makefile" dest="gpl/amule/Makefile"/>
-    <copy-file src="../ap/gpl/curl/Makefile" dest="gpl/curl/Makefile"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/make_arm.sh" dest="gpl/curl/make_arm.sh"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/Makefile" dest="gpl/curl/Makefile"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/Makefile_arm" dest="gpl/curl/Makefile_arm"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/make.sh" dest="gpl/curl/make.sh"/>
     <copy-file src="../ap/gpl/gsoap/Makefile" dest="gpl/gsoap/Makefile"/>
     <copy-file src="../ap/gpl/iserver/edit_config_status.sh" dest="gpl/iserver/edit_config_status.sh"/>
     <copy-file src="../ap/gpl/iserver/edit_makefile.sh" dest="gpl/iserver/edit_makefile.sh"/>
@@ -66,9 +68,9 @@
     <copy-file src="../ap/gpl/transmission/Makefile" dest="gpl/transmission/Makefile"/>
     <copy-file src="components/opensource/linux/linux-2.6.36/.config_R7000" dest="linux-2.6.36/config_R7000"/>
     <copy-file src="src/Makefile" dest="src/Makefile"/>
-    <copy-file src="../src/router/.config" dest="src/router/config_R6400"/>
+    <copy-file src="../src/router/.config" dest="src/router/config_R7000"/>
     <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
-    <copy-file src="../R6400-V*_build_instructions.txt" dest="build_instructions.txt"/>
+    <copy-file src="../R7000-V*_build_instructions.txt" dest="build_instructions.txt"/>
   </project>
   <project name="wakelan" location="ap/gpl/timemachine/netatalk-utility"/>
 </locations>
