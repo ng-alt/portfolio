@@ -122,11 +122,11 @@
     <copy-file src="../ap/gpl/samba4/smb_lib.txt" dest="gpl/samba4/smb_lib.txt"/>
     <copy-file src="../ap/gpl/timemachine/Makefile" dest="gpl/timemachine/Makefile"/>
     <copy-file src="../ap/gpl/transmission/Makefile" dest="gpl/transmission/Makefile"/>
-    <copy-file src="components/opensource/linux/linux-2.6.36/.config_R6400" dest="linux-2.6.36/config_R6400"/>
-    <copy-file src="src/Makefile" dest="src/Makefile"/>
+    <copy-file src="../components/opensource/linux/linux-2.6.36/.config_R6400" dest="linux-2.6.36/config_R6400"/>
     <copy-file src="../src/router/.config" dest="src/router/config_R6400"/>
     <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
     <copy-file src="../R6400-V*_build_instructions.txt" dest="build_instructions.txt"/>
+    <copy-file src="src/Makefile" dest="src/Makefile"/>
   </project>
   <project name="wakelan" location="ap/gpl/timemachine/netatalk-utility"/>
 </locations>

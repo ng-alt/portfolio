@@ -279,11 +279,11 @@
     <copy-file src="../ap/gpl/minidlna/Makefile" dest="gpl/minidlna/Makefile"/>
     <copy-file src="../ap/gpl/samba4/Makefile" dest="gpl/samba4/Makefile"/>
     <copy-file src="../ap/gpl/samba4/smb_lib.txt" dest="gpl/samba4/smb_lib.txt"/>
-    <copy-file src="components/opensource/linux/linux-2.6.36/.config_R6300v2" dest="linux-2.6.36/config_R6300v2"/>
-    <copy-file src="src/Makefile" dest="src/Makefile"/>
+    <copy-file src="../components/opensource/linux/linux-2.6.36/.config_R6300v2" dest="linux-2.6.36/config_R6300v2"/>
     <copy-file src="../src/router/.config" dest="src/router/config_R6300v2"/>
     <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
     <copy-file src="../R6300v2-V*_build_instructions.txt" dest="build_instructions.txt"/>
+    <copy-file src="src/Makefile" dest="src/Makefile"/>
   </project>
   <project name="vendor_broadcom_router_tools" location="tools"/>
   <project name="vlan" location="src/router/vlan">
