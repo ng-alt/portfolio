@@ -104,6 +104,7 @@
     <exclude-file name="^arch/arm/(kernel/asm-offsets.s|kernel/vmlinux.lds|lib/lib.a)$"/>
     <exclude-file name="^drivers/connector/cn.ko$"/>
     <exclude-file name="^drivers/net/(ctf/ctf.ko|dpsta/dpsta.ko|emf/emf.ko|et/et.ko|igs/igs.ko|proxyarp/proxyarp.ko|wl/wl.ko)$"/>
+    <exclude-file name="^drivers/net/dhd/dhd(\.o|\.ko)$"/>
     <exclude-file name="^drivers/net/wl/.*.o$"/>
     <exclude-file name="^drivers/scsi/scsi_wait_scan.ko$"/>
     <exclude-file name="^drivers/usb/host/(ehci-hcd.ko|ohci-hcd.ko|xhci-hcd.ko)$"/>
