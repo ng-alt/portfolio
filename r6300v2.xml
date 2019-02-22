@@ -24,7 +24,7 @@
   <project name="cpython" location="ap/gpl/samba4/Python-2.7.11">
     <include-file name="Makefile.pre.in"/>
   </project>
-  <project name="dhcpv6" location="src/router/dhcp6|ap/gpl/dhcp6">
+  <project name="dhcpv6" location="ap/gpl/dhcp6|src/router/dhcp6">
     <exclude-file name=".*\.o"/>
     <exclude-file name="^(client6_parse.c|client6_token.c|cp.tab.h|dad_token.c|lease_token.c|ra_token.c|radvd_token.c|resolv_token.c|server6_parse.c|server6_token.c|sf.tab.h)$"/>
     <exclude-file name="^(dhcp6c|dhcp6s)$"/>
@@ -209,7 +209,7 @@
     <exclude-dir name="amiga"/>
     <exclude-file name="^(.*.o|flags|funzip|unzip|unzipsfx)$"/>
   </project>
-  <project name="vendor_broadcom_router_base" location="src" cleanup="true">
+  <project name="vendor_broadcom_router_base" location="src" cleanup="true" strict="true">
     <include-dir name="^common$"/>
     <include-dir name="^et$"/>
     <include-dir name="^include$"/>
@@ -220,7 +220,7 @@
     <include-file name="^Makefile$"/>
     <include-file name="^tools/misc/epi_ttcp.c$"/>
   </project>
-  <project name="vendor_broadcom_router" location="src/router" cleanup="true">
+  <project name="vendor_broadcom_router" location="src/router" cleanup="true" strict="true">
     <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
     <include-dir name="^bcmupnp$"/>
     <include-dir name="^config$" exclude-files="defconfig.*"/>

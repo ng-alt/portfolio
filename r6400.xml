@@ -23,10 +23,13 @@
     <include-file name="GNUmakefile"/>
   </project>
   <project name="bpalogin" location="ap/gpl/bpalogin"/>
+  <project name="berkeleydb" location="ap/gpl/timemachine/db-4.7.25.NC">
+    <exclude-dir name="^docs_src$"/>
+  </project>
   <project name="cryptopp" location="ap/gpl/amule/libcryptoxx-5.6.0">
     <include-file name="GNUmakefile"/>
   </project>
-  <project name="forked-daapd" location="ap/gpl/iserver/forked-daapd-0.19">
+  <project name="forked-daapd" location="ap/gpl/iserver/forked-daapd-0.19|ap/gpl/iserver/ejurgensen-forked-daapd">
     <exclude-dir name="^m4$"/>
     <exclude-file name="Makefile$|Makefile.in$|tags"/>
     <exclude-file name="(.*\.Plo|.*\.Po|.*\u)$"/>
@@ -64,9 +67,9 @@
   <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
     <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
     <include-dir name="^ap/acos$"/>
-    <include-dir name="^src/router/arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
-    <include-dir name="^lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
-    <include-dir name="^www$"/>
+    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
+    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
+    <include-dir name="^arm-uclibc/target/(opt|www)$"/>
     <include-dir name="^bcmupnp$"/>
     <include-dir name="^config$" exclude-files="defconfig.*"/>
     <include-dir name="^ctf$"/>
