@@ -121,6 +121,9 @@
     <exclude-dir name="^(doc|m4|misc)$"/>
     <exclude-file name="^(aclocal.m4|autogen.des|compile|config\..*|depcomp|install-sh|ltmain.sh|missing|test-driver)$"/>
   </project>
+  <project name="openvpn" location="release/src-rt-6.x.4708/router/openvpn">
+    <include-dir name="^(src|plugins)$"/>
+  </project>
   <project name="phddns" location="release/src-rt-6.x.4708/router/phddns"/>
   <project name="portaudio" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12/third_party/portaudio">
     <exclude-dir name="^(bindings|doc|test)$"/>
