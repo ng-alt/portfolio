@@ -136,6 +136,9 @@
     <exclude-file name=".depend"/>
   </project>
   <project name="ppp" location="release/src-rt-6.x.4708/router/pppd"/>
+  <project name="quagga" location="release/src-rt-6.x.4708/router/quagga">
+    <include-file name="^lib/privs.c$"/>
+  </project>
   <project name="rp-l2tp" location="release/src-rt-6.x.4708/router/rp-l2tp">
     <exclude-file name="^config\..*$"/>
   </project>
