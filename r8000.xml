@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locations>
+  <include name="r7000.xml"/>
+  <!-- override the included config files -->
+  <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
+    <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igmp|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
+    <include-dir name="^ap/acos$"/>
+    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
+    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
+    <include-dir name="^arm-uclibc/target/(opt|www)$"/>
+    <include-dir name="^bcmupnp$"/>
+    <include-dir name="^config$" exclude-files="defconfig.*"/>
+    <include-dir name="^ctf$"/>
+    <include-dir name="^dpsta$"/>
+    <include-dir name="^fbwifi$"/>
+    <include-dir name="^igd$"/>
+    <include-dir name="^libbcm$"/>
+    <include-dir name="^libbcmcrypto$"/>
+    <include-dir name="^misc$"/>
+    <include-dir name="^mpstat$" exclude-files=".*\.o,mpstat$"/>
+    <include-dir name="^netconf$" exclude-files=".*\.o,.*\.so,netconf$"/>
+    <include-dir name="^nvram$" exclude-files=".*\.o,.*\.so,nvram$"/>
+    <include-dir name="^prebuilt"/>
+    <include-dir name="^proxyarp$"/>
+    <include-dir name="^rc$"/>
+    <include-dir name="^shared$" exclude-files=".*\.o,.*\.so"/>
+    <include-dir name="^ufsd$"/>
+    <include-dir name="^usbprinter$"/>
+    <include-dir name="^utelnetd$" exclude-files="utelnetd$,Makefile.bak"/>
+    <include-dir name="^utils$" exclude-files="epi_ttcp$"/>
+    <include-dir name="^vmstat$" exclude-files="vmstat$,.*\.o"/>
+    <include-file name="^arm-uclibc/(compatible_r8000.txt|netgear-streaming-db)$"/>
+    <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
+    <include-file name="^arm-uclibc/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(dhcp6c_down|dhcp6c_up|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
+    <include-file name="^arm-uclibc/target/usr/bin/(taskset)$"/>
+    <include-file name="^arm-uclibc/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so)$"/>
+    <include-file name="^arm-uclibc/target/usr/local/share/foxconn_ca$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
+    <include-file name="^compressed/Makefile$"/>
+    <include-file name="^(Makefile|README)$"/>
+  </project>
+  <project name="vendor_netgear_router_project" location="project" symlinks="false" cleanup="true" override="true">
+    <include-file name="^gpl/(config.in|config.mk|Makefile)$"/>
+    <copy-file src="../ap/gpl/amule/Makefile" dest="gpl/amule/Makefile"/>
+    <copy-file src="../ap/gpl/awsiot/Makefile" dest="gpl/awsiot/Makefile"/>
+    <copy-file src="../ap/gpl/awsiot/certs" dest="gpl/awsiot/certs"/>
+    <copy-file src="../ap/gpl/circle/Makefile" dest="gpl/circle/Makefile"/>
+    <copy-file src="../ap/gpl/conntrack-tools/Makefile" dest="gpl/conntrack-tools/Makefile"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/make_arm.sh" dest="gpl/curl/make_arm.sh"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/Makefile" dest="gpl/curl/Makefile"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/Makefile_arm" dest="gpl/curl/Makefile_arm"/>
+    <copy-file src="../ap/gpl/curl-7.23.1/make.sh" dest="gpl/curl/make.sh"/>
+    <copy-file src="../ap/gpl/curl/Makefile" dest="gpl/curl/Makefile"/>
+    <copy-file src="../ap/gpl/gsoap/Makefile" dest="gpl/gsoap/Makefile"/>
+    <copy-file src="../ap/gpl/iserver/edit_config_status.sh" dest="gpl/iserver/edit_config_status.sh"/>
+    <copy-file src="../ap/gpl/iserver/edit_makefile.sh" dest="gpl/iserver/edit_makefile.sh"/>
+    <copy-file src="../ap/gpl/iserver/list_config_status" dest="gpl/iserver/list_config_status"/>
+    <copy-file src="../ap/gpl/iserver/list_mk" dest="gpl/iserver/list_mk"/>
+    <copy-file src="../ap/gpl/iserver/Makefile" dest="gpl/iserver/Makefil"/>
+    <copy-file src="../ap/gpl/iserver/mount_filesys.sh" dest="gpl/iserver/mount_filesys.sh"/>
+    <copy-file src="../ap/gpl/iserver/start_forked-daapd.sh" dest="gpl/iserver/start_forked-daapd.sh"/>
+    <copy-file src="../ap/gpl/libpng/Makefile" dest="gpl/libpng/Makefile"/>
+    <copy-file src="../ap/gpl/libxml2-2.7.2/Makefile" dest="gpl/libxml2/Makefile"/>
+    <copy-file src="../ap/gpl/lsync/Makefile" dest="gpl/lsync/Makefile"/>
+    <copy-file src="../ap/gpl/lua/Makefile" dest="gpl/lua/Makefile"/>
+    <copy-file src="../ap/gpl/Micromax/Makefile" dest="gpl/micromax/Makefile"/>
+    <copy-file src="../ap/gpl/Micromax/readme.txt" dest="gpl/micromax/README"/>
+    <copy-file src="../ap/gpl/minidlna/Makefile" dest="gpl/minidlna/Makefile"/>
+    <copy-file src="../ap/gpl/minidlna/Makefile_arm" dest="gpl/minidlna/Makefile_arm"/>
+    <copy-file src="../ap/gpl/ncftp-3.2.5/Makefile" dest="gpl/ncftp/Makefile"/>
+    <copy-file src="../ap/gpl/openssl-1.0.2h/new_opencrt" dest="gpl/openssl/opencrt"/>
+    <copy-file src="../ap/gpl/pptpd/Makefile" dest="gpl/pptpd/Makefile"/>
+    <copy-file src="../ap/gpl/samba4/Makefile" dest="gpl/samba4/Makefile"/>
+    <copy-file src="../ap/gpl/samba4/smb_lib.txt" dest="gpl/samba4/smb_lib.txt"/>
+    <copy-file src="../ap/gpl/timemachine/Makefile" dest="gpl/timemachine/Makefile"/>
+    <copy-file src="../ap/gpl/transmission/Makefile" dest="gpl/transmission/Makefile"/>
+    <copy-file src="../components/opensource/linux/linux-2.6.36/.config_R8000" dest="linux-2.6.36/config_R8000"/>
+    <copy-file src="../src/Makefile" dest="src/Makefile"/>
+    <copy-file src="../src/router/.config" dest="src/router/config_8000"/>
+    <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
+    <copy-file src="../R8000-V*_build_instructions.txt" dest="build_instructions.txt"/>
+  </project>
+  <project name="wakelan" location="ap/gpl/timemachine/netatalk-utility"/>
+</locations>

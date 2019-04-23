@@ -25,6 +25,7 @@
   <project name="bpalogin" location="ap/gpl/bpalogin"/>
   <project name="berkeleydb" location="ap/gpl/timemachine/db-4.7.25.NC">
     <exclude-dir name="^docs_src$"/>
+    <exclude-file name="tags"/>
   </project>
   <project name="cryptopp" location="ap/gpl/amule/libcryptoxx-5.6.0">
     <include-file name="GNUmakefile"/>
@@ -40,8 +41,13 @@
   </project>
   <project name="hd-idle" location="ap/gpl/hd-idle-1.04">
     <exclude-file name="tags"/>
+    <exclude-file name="hd-idle"/>
+    <exclude-file name=".*\.o$"/>
   </project>
-  <project name="hdparm" location="ap/gpl/hdparm-9.43"/>
+  <project name="hdparm" location="ap/gpl/hdparm-9.43">
+    <exclude-file name="hdparm"/>
+    <exclude-file name=".*\.o$"/>
+  </project>
   <!--project name="libconfuse" location="ap/gpl/iserver/confuse-2.7"/-->
   <project name="lua" location="ap/gpl/lua/source/src"/>
   <project name="mxml" location="ap/gpl/iserver/mxml-2.7"/>
