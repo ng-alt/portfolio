@@ -122,7 +122,7 @@
     <copy-file src="../ap/gpl/iserver/edit_makefile.sh" dest="gpl/iserver/edit_makefile.sh"/>
     <copy-file src="../ap/gpl/iserver/list_config_status" dest="gpl/iserver/list_config_status"/>
     <copy-file src="../ap/gpl/iserver/list_mk" dest="gpl/iserver/list_mk"/>
-    <copy-file src="../ap/gpl/iserver/Makefile" dest="gpl/iserver/Makefil"/>
+    <copy-file src="../ap/gpl/iserver/Makefile" dest="gpl/iserver/Makefile"/>
     <copy-file src="../ap/gpl/iserver/mount_filesys.sh" dest="gpl/iserver/mount_filesys.sh"/>
     <copy-file src="../ap/gpl/iserver/start_forked-daapd.sh" dest="gpl/iserver/start_forked-daapd.sh"/>
     <copy-file src="../ap/gpl/lua/Makefile" dest="gpl/lua/Makefile"/>
