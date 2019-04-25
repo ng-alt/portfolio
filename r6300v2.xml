@@ -47,10 +47,12 @@
     </locations>
     <exclude-file name="^(\.config|\.version)$"/>
     <exclude-file name=".*\.d$|.*\.pc$"/>
-    <exclude-file name="^config\.(err|h|mak)$"/>
+    <exclude-file name="^config\.(err|fate|h|log|mak)$"/>
     <exclude-file name="^VERSION|version.h$"/>
     <exclude-file name="(.*.a|.*.o|.*.so.*|.*.ver)$"/>
     <exclude-file name="^(ffmpeg|ffmpeg_g)$"/>
+    <exclude-file name="^libavutil/avconfig.h$"/>
+    <exclude-dir name="^doc$"/>
   </project>
   <project name="flac" location="ap/gpl/minidlna/flac-1.2.1">
     <exclude-dir name="^doc/html/api"/>
