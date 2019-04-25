@@ -30,7 +30,12 @@
   <project name="cryptopp" location="ap/gpl/amule/libcryptoxx-5.6.0">
     <include-file name="GNUmakefile"/>
   </project>
-  <project name="forked-daapd" location="ap/gpl/iserver/forked-daapd-0.19|ap/gpl/iserver/ejurgensen-forked-daapd">
+  <project name="forked-daapd" location="ap/gpl/iserver/ejurgensen-forked-daapd">
+    <locations name="ap/gpl/iserver/forked-daapd-0.19">
+      <location project="R6400"/>
+      <location project="R7000" till="1.0.9.10_1.2.21"/>
+      <location project="R8000" till="1.0.4.2_1.1.41"/>
+    </locations>
     <exclude-dir name="^m4$"/>
     <exclude-file name="Makefile$|Makefile.in$|tags"/>
     <exclude-file name="(.*\.Plo|.*\.Po|.*\u)$"/>
@@ -52,6 +57,9 @@
   <project name="lua" location="ap/gpl/lua/source/src"/>
   <project name="mxml" location="ap/gpl/iserver/mxml-2.7"/>
   <project name="Netatalk" location="ap/gpl/timemachine/netatalk-2.2.5">
+    <locations name="ap/gpl/timemachine/netatalk-2.2.0">
+      <location project="R7000" till="1.0.2.194_1.0.15"/>
+    </locations>
     <exclude-dir name="^(macros|man)$"/>
     <exclude-file name="Makefile$|Makefile.bak$|Makefile.in$"/>
     <exclude-file name=".*\.Plo|.*\.Po"/>

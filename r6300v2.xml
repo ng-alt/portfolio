@@ -29,11 +29,23 @@
     <exclude-file name="^(client6_parse.c|client6_token.c|cp.tab.h|dad_token.c|lease_token.c|ra_token.c|radvd_token.c|resolv_token.c|server6_parse.c|server6_token.c|sf.tab.h)$"/>
     <exclude-file name="^(dhcp6c|dhcp6s)$"/>
   </project>
-  <project name="dnsmasq" location="ap/gpl/dnsmasq-2.15|ap/gpl/dnsmasq-2.78">
+  <project name="dnsmasq" location="ap/gpl/dnsmasq-2.78">
+    <locations name="ap/gpl/dnsmasq-2.15">
+      <location project="R6300v2" till="1.0.4.32_10.0.91"/>
+      <location project="R6400" till="1.0.1.44_1.0.31"/>
+      <location project="R7000" till="1.0.9.34_10.2.36"/>
+      <location project="R8000" till="1.0.4.18_10.1.49"/>
+    </locations>
     <exclude-dir name="^(debian|logo|po|rpm)$"/>
     <exclude-file name="(.*.o|dnsmasq)$"/>
   </project>
-  <project name="FFmpeg" location="ap/gpl/minidlna/ffmpeg-0.5.1|ap/gpl/minidlna/ffmpeg-2.3.4">
+  <project name="FFmpeg" location="ap/gpl/minidlna/ffmpeg-2.3.4">
+    <locations name="ap/gpl/minidlna/ffmpeg-0.5.1">
+      <location project="R6400" till="1.0.0.14_1.0.8"/>
+      <location project="R7000" till="1.0.4.18_1.1.52"/>
+      <location project="R8000" till="1.0.3.4_1.1.2"/>
+    </locations>
+    <exclude-file name="^(\.config|\.version)$"/>
     <exclude-file name=".*\.d$|.*\.pc$"/>
     <exclude-file name="^config\.(err|h|mak)$"/>
     <exclude-file name="^VERSION|version.h$"/>
@@ -127,6 +139,12 @@
   </project>
   <project name="LZMA-SDK" location="src/tools/misc/lzma_src"/>
   <project name="minidlna" location="ap/gpl/minidlna/minidlna-1.1.5">
+    <location name="ap/gpl/minidlna/minidlna.03.14" project="R6300v2"/>
+    <locations name="ap/gpl/minidlna/minidlna-1.0.26">
+      <location project="R6400"/>
+      <location project="R7000" till="1.0.7.12_1.2.5"/>
+      <location project="R8000" till="1.0.4.2_1.1.41"/>
+    </locations>
     <exclude-dir name="^(m4|po)$"/>
     <exclude-file name="^(ABOUT-NLS|INSTALL|Makefile|Makefile.in|aclocal.m4|compile|config\..*|configure|depcomp|install-sh|missing)$"/>
     <exclude-file name="(.*\.o|minidlna)$"/>
@@ -181,7 +199,18 @@
     <exclude-file name="^(gram.c|gram.h|scanner.c|radvd|radvdump)$"/>
     <exclude-file name="(.*\.o|.*\.Po|.*\.[58])$"/>
   </project>
-  <project name="samba" location="ap/gpl/samba-3.0.13|ap/gpl/samba-3.0.25b|ap/gpl/samba4/samba-4.4.3">
+  <project name="samba" location="ap/gpl/samba4/samba-4.4.3">
+    <locations name="ap/gpl/samba-3.0.25b">
+      <location project="R6300v2" till="1.0.4.24_10.0.87"/>
+      <location project="R6400" till="1.0.1.32_1.0.23"/>
+      <location project="R7000" till="1.0.9.10_1.2.21"/>
+      <location project="R8000" till="1.0.4.2_1.1.41"/>
+    </locations>
+    <locations name="ap/gpl/samba-3.0.13">
+      <location project="R6300v2" till="1.0.3.2_1.0.57"/>
+      <location project="R6400" till="1.0.0.14_1.0.8"/>
+      <location project="R7000" till="1.0.1.22_1.0.15"/>
+    </locations>
     <exclude-dir name="^(docs|examples|packaging|source/bin)$"/>
     <exclude-file name=".*/Makefile$"/>
     <exclude-file name="^(\.conf|config.h)$"/>
