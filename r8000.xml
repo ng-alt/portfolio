@@ -24,6 +24,7 @@
     <include-dir name="^proxyarp$"/>
     <include-dir name="^rc$"/>
     <include-dir name="^shared$" exclude-files=".*\.o,.*\.so"/>
+    <include-dir name="^taskset$"/>
     <include-dir name="^ufsd$"/>
     <include-dir name="^usbprinter$"/>
     <include-dir name="^utelnetd$" exclude-files="utelnetd$,Makefile.bak"/>
@@ -82,7 +83,7 @@
     <copy-file src="../ap/gpl/transmission/Makefile" dest="gpl/transmission/Makefile"/>
     <copy-file src="../components/opensource/linux/linux-2.6.36/.config_R8000" dest="linux-2.6.36/config_R8000"/>
     <copy-file src="../src/Makefile" dest="src/Makefile"/>
-    <copy-file src="../src/router/.config" dest="src/router/config_8000"/>
+    <copy-file src="../src/router/.config" dest="src/router/config_R8000"/>
     <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
     <copy-file src="../R8000-V*_build_instructions.txt" dest="build_instructions.txt"/>
   </project>
