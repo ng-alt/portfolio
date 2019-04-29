@@ -20,7 +20,6 @@
     <include-dir name="^mpstat$" exclude-files=".*\.o,mpstat$"/>
     <include-dir name="^netconf$" exclude-files=".*\.o,.*\.so,netconf$"/>
     <include-dir name="^nvram$" exclude-files=".*\.o,.*\.so,nvram$"/>
-    <include-dir name="^prebuilt"/>
     <include-dir name="^proxyarp$"/>
     <include-dir name="^rc$"/>
     <include-dir name="^shared$" exclude-files=".*\.o,.*\.so"/>
@@ -32,19 +31,20 @@
     <include-dir name="^vmstat$" exclude-files="vmstat$,.*\.o"/>
     <include-file name="^arm-uclibc/(compatible_r8000.txt|netgear-streaming-db)$"/>
     <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
-    <include-file name="^arm-uclibc/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
-    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
-    <include-file name="^arm-uclibc/target/sbin/(dhcp6c_down|dhcp6c_up|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect)$"/>
-    <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
-    <include-file name="^arm-uclibc/target/sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
-    <include-file name="^arm-uclibc/target/usr/bin/(taskset)$"/>
-    <include-file name="^arm-uclibc/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so)$"/>
-    <include-file name="^arm-uclibc/target/usr/local/share/foxconn_ca$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
     <include-file name="^compressed/Makefile$"/>
     <include-file name="^(Makefile|README)$"/>
+    <include-file name="^prebuilt/.*\.ko$"/>
+    <include-file name="^prebuilt/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
+    <include-file name="^prebuilt/target/sbin/(acos_init|acos_service|arp|autoconfig_wan_down|autoconfig_wan_up|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
+    <include-file name="^prebuilt/target/sbin/(dhcp6c_down|dhcp6c_up|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect)$"/>
+    <include-file name="^prebuilt/target/sbin/(getchksum|getopenvpnsum|htmlget|ipv6-conntab|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
+    <include-file name="^prebuilt/target/sbin/(routerinfo|showconfig|ubdcmd|uptime|version)$"/>
+    <include-file name="^prebuilt/target/usr/bin/(taskset)$"/>
+    <include-file name="^prebuilt/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so)$"/>
+    <include-file name="^prebuilt/target/usr/local/share/foxconn_ca$"/>
+    <include-file name="^prebuilt/target/usr/sbin/(acl_logd|autoipd|brctl|ca.pem|check_fw|cli|ddnsd|dlnad|dnsRedirectReplyd|email|fbwifi_command|ftpc|heartbeat|httpd|httpsd.pem)$"/>
+    <include-file name="^prebuilt/target/usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
+    <include-file name="^prebuilt/target/usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
   </project>
   <project name="vendor_netgear_router_project" location="project" symlinks="false" cleanup="true" override="true">
     <include-file name="^gpl/(config.in|config.mk|Makefile)$"/>
