@@ -35,6 +35,7 @@
       <location project="R6400" till="1.0.1.44_1.0.31"/>
       <location project="R7000" till="1.0.9.34_10.2.36"/>
       <location project="R8000" till="1.0.4.18_10.1.49"/>
+      <location project="R8500" till="1.0.2.128_1.0.97"/>
     </locations>
     <exclude-dir name="^(debian|logo|po|rpm)$"/>
     <exclude-file name="(.*.o|dnsmasq)$"/>
@@ -207,6 +208,7 @@
       <location project="R6400" till="1.0.1.32_1.0.23"/>
       <location project="R7000" till="1.0.9.10_1.2.21"/>
       <location project="R8000" till="1.0.4.2_1.1.41"/>
+      <location project="R8500" till="1.0.2.116_1.0.90"/>
     </locations>
     <locations name="ap/gpl/samba-3.0.13">
       <location project="R6300v2" till="1.0.3.2_1.0.57"/>
