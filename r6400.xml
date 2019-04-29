@@ -2,7 +2,7 @@
 <locations>
   <include name="r6300v2.xml"/>
 
-  <project name="alsa-lib" location="ap/gpl/iserver/alsa-lib-1.0.26">
+  <project name="alsa-lib" location="ap/gpl/iserver/alsa-lib-1.0.26" symlinks="true">
     <exclude-dir name="^(autom4te.cache|modules/mixer/simple/python|test)$"/>
     <exclude-file name="Makefile$|Makefile.in$"/>
     <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|include/stamp-h1|install-sh|libtool|ltconfig|ltmain.sh|missing|version)$"/>
