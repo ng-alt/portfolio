@@ -24,6 +24,7 @@
     <include-dir name="^config$" exclude-files="defconfig.*"/>
     <include-dir name="^ctf$"/>
     <include-dir name="^dpsta$"/>
+    <include-dir name="^emf$" exclude-files="emfconf/emf,igsconf/igs"/>
     <include-dir name="^fbwifi$"/>
     <include-dir name="^igd$"/>
     <include-dir name="^libbcm$"/>
