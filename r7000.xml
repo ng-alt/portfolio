@@ -36,7 +36,6 @@
     <include-dir name="^prebuilt"/>
     <include-dir name="^proxyarp$"/>
     <include-dir name="^rc$"/>
-    <include-dir name="^shared$" exclude-files=".*\.o,.*\.so"/>
     <include-dir name="^ufsd$"/>
     <include-dir name="^usbprinter$"/>
     <include-dir name="^utelnetd$" exclude-files="utelnetd$,Makefile.bak"/>
@@ -56,6 +55,7 @@
     <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lld2d|lld2d.conf|mevent|mld|outputimage|pot|ripd|rtsol|scheact|swresetd|telnetenabled|tfmeter|timesync|upnpd)$"/>
     <include-file name="^arm-uclibc/target/usr/sbin/(wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
     <include-file name="^compressed/Makefile$"/>
+    <include-file name="^shared/(.*\.c|.*\.h|.*\.in|Makefile|passpoint_nvparse.o)$"/>
     <include-file name="^(Makefile|README)$"/>
   </project>
   <project name="vendor_netgear_router_project" location="project" symlinks="false" cleanup="true" override="true">
