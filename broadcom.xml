@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations>
+  <project name="vendor_broadcom_router_base" location="src" cleanup="true" strict="true">
+    <include-dir name="^common$"/>
+    <include-dir name="^et$"/>
+    <include-dir name="^include$"/>
+    <include-dir name="^makefiles$"/>
+    <include-dir name="^shared$" exclude-files=".*\.o"/>
+    <include-dir name="^tools/release$"/>
+    <include-dir name="^wl$" exclude-files="linux_wl_apstat_R.+\.o$"/>
+    <include-file name="^Makefile$"/>
+    <include-file name="^tools/misc/epi_ttcp.c$"/>
+  </project>
+  <project name="vendor_broadcom_router_tools" location="tools"/>
+  <project name="vendor_netgear_acos" location="ap/acos" symlinks="false">
+    <exclude-dir name="^acos_nat$"/>
+    <!--exclude-dir name="^shared$"/-->
+  </project>
+  <project name="vendor_netgear_router_l7filter" location="ap/gpl/l7filter">
+    <exclude-file name="^.l7_filter_main.o.flags$"/>
+  </project>
+</locations>

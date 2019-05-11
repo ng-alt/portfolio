@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locations>
-  <include name="r6400.xml"/>
-  <project name="iputils" location="src/router/iputils"/>
-  <project name="netkit-ftp" location="ap/gpl/netkit-ftp-0.18-pre1"/>
-  <project name="picocom" location="ap/gpl/picocom">
-    <exclude-file name="^(Makefile_my|picocom)$"/>
-  </project>
-  <project name="pptpd" location="ap/gpl/pptpd/pptpd-1.3.4">
-    <exclude-dir name="^(debian|htm|tools)$"/>
-    <exclude-file name="^(BUGS|buuild.sh|ChangeLog-.*|PROTOCOL-SECURITY|RELEASING)$"/>
-  </project>
-  <project name="usbmodem_micromax" location="ap/gpl/Micromax/Linux">
-    <exclude-file name="(.*.bin|.*.out|.*.gz|cscope.*|tags)$"/>
-  </project>
-  <!-- override the included config files -->
+  <include name="base.xml"/>
+  <include name="broadcom.xml"/>
+
   <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
     <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gbsd|gpio|hotplug2/etc|igd|igmp|igs|iqos|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
     <include-dir name="^ap/acos$"/>
@@ -102,5 +91,4 @@
     <copy-file src="../src/router/iptables-1.4.12/Makefile" dest="src/router/iptables-1.4.12/Makefile"/>
     <copy-file src="../R7000-V*_build_instructions.txt" dest="build_instructions.txt"/>
   </project>
-  <project name="wakelan" location="ap/gpl/timemachine/netatalk-utility"/>
 </locations>

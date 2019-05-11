@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations>
+  <project name="alsa-lib" location="ap/gpl/iserver/alsa-lib-1.0.26" symlinks="true">
+    <exclude-dir name="^(autom4te.cache|modules/mixer/simple/python|test)$"/>
+    <exclude-file name="Makefile$|Makefile.in$"/>
+    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|include/stamp-h1|install-sh|libtool|ltconfig|ltmain.sh|missing|version)$"/>
+    <exclude-file name=".*\.la|.*\.lisp|.*\.pc|.*\.Plo|.*\.Po"/>
+    <exclude-file name="^(doc/doxygen.cfg|src/conf/cards/Loopback.conf|utils/alsa-lib.spec)$"/>
+    <exclude-file name="^include/(alsa|asoundlib.h|config.h|config.h.in|version.h)$"/>
+    <exclude-file name="^src/(Versions|control/ctl_symbols_list.c|pcm/pcm_symbols_list.c)$"/>
+  </project>
+  <!-- avahi in ap/gpl/timemachine/avahi-0.6.25 is not checked but used -->
+  <project name="avahi" location="ap/gpl/iserver/avahi-0.6.25">
+    <exclude-dir name="^(autom4te.cache|common|docs|man|po|specs|tests)$"/>
+    <exclude-file name="funcs.txt|Makefile$|Makefile.in$"/>
+    <exclude-file name=".*\.Plo|.*\.Po"/>
+    <exclude-file name="^(ABOUT-NLS|aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|py-compile|stamp-h1)$"/>
+    <exclude-file name="^avahi-core/findstatic.pl$"/>
+  </project>
+  <project name="avl" location="ap/gpl/iserver/avl-0.3.5">
+    <include-file name="GNUmakefile"/>
+  </project>
+  <project name="berkeleydb" location="ap/gpl/timemachine/db-4.7.25.NC">
+    <exclude-dir name="^docs_src$"/>
+    <exclude-file name="tags"/>
+  </project>
+  <project name="bftpd" location="ap/gpl/bftpd-1.6.6">
+    <exclude-file name="^(.*.o|mksources.finished|bftpd)$"/>
+  </project>
+  <project name="bpalogin" location="ap/gpl/bpalogin"/>
+  <project name="bridge-utils" location="src/router/bridge-1.x">
+    <exclude-file name="Makefile$"/>
+    <exclude-file name="^(aclocal.m4|configure)$"/>
+    <exclude-file name="(brctl/brctl|libbridge/config.h)$"/>
+    <exclude-file name="(.*\.a|.*\.o)$"/>
+  </project>
+  <project name="busybox" location="src/router/busybox-1.x">
+    <exclude-dir name="^include/config"/>
+    <exclude-file name="^\.config.*"/>
+    <exclude-file name="^include/(autoconf.h|bbconfigopts.h|usage_compressed.h)$"/>
+    <exclude-file name="^scripts/basic/(docproc|fixdep|split-include)$"/>
+    <exclude-file name="^scripts/kconfig/(lxdialog/lxdialog|.*conf|lex.zconf.c|zconf.hash.c|zconf.tab.c)$"/>
+    <exclude-file name="^(.kernelrelease|applets/usage|busybox|busybox.links|busybox_ld.err|busybox_ld.out|busybox_unstripped.map)$"/>
+    <exclude-file name="(.*.d|.*.o|.*.cmd|lib.a)$"/>
+  </project>
+  <project name="bzip2" location="ap/gpl/bzip2">
+    <exclude-file name="^(.*.a|.*.o|bzip2|bzip2recover)$"/>
+  </project>
+  <project name="cryptopp" location="ap/gpl/amule/libcryptoxx-5.6.0">
+    <include-file name="GNUmakefile"/>
+  </project>
+  <project name="cpython" location="ap/gpl/samba4/Python-2.7.11">
+    <include-file name="Makefile.pre.in"/>
+  </project>
+  <project name="dhcpv6" location="ap/gpl/dhcp6|src/router/dhcp6">
+    <exclude-file name=".*\.o"/>
+    <exclude-file name="^(client6_parse.c|client6_token.c|cp.tab.h|dad_token.c|lease_token.c|ra_token.c|radvd_token.c|resolv_token.c|server6_parse.c|server6_token.c|sf.tab.h)$"/>
+    <exclude-file name="^(dhcp6c|dhcp6s)$"/>
+  </project>
+  <project name="dnsmasq" location="ap/gpl/dnsmasq-2.78">
+    <locations name="ap/gpl/dnsmasq-2.15">
+      <location project="R6300v2" till="1.0.4.32_10.0.91"/>
+      <location project="R6400" till="1.0.1.44_1.0.31"/>
+      <location project="R7000" till="1.0.9.34_10.2.36"/>
+      <location project="R8000" till="1.0.4.18_10.1.49"/>
+      <location project="R8500" till="1.0.2.128_1.0.97"/>
+    </locations>
+    <exclude-dir name="^(debian|logo|po|rpm)$"/>
+    <exclude-file name="(.*.o|dnsmasq)$"/>
+  </project>
+  <project name="FFmpeg" location="ap/gpl/minidlna/ffmpeg-2.3.4">
+    <locations name="ap/gpl/minidlna/ffmpeg-0.5.1">
+      <location project="R6400" till="1.0.0.14_1.0.8"/>
+      <location project="R7000" till="1.0.4.18_1.1.52"/>
+      <location project="R8000" till="1.0.3.4_1.1.2"/>
+    </locations>
+    <exclude-file name="^(\.config|\.version)$"/>
+    <exclude-file name=".*\.d$|.*\.pc$"/>
+    <exclude-file name="^config\.(err|fate|h|log|mak)$"/>
+    <exclude-file name="^VERSION|version.h$"/>
+    <exclude-file name="(.*.a|.*.o|.*.so.*|.*.ver)$"/>
+    <exclude-file name="^(ffmpeg|ffmpeg_g)$"/>
+    <exclude-file name="^libavutil/avconfig.h$"/>
+    <exclude-dir name="^doc$"/>
+  </project>
+  <project name="flac" location="ap/gpl/minidlna/flac-1.2.1">
+    <exclude-dir name="^doc/html/api"/>
+    <exclude-dir name="^flac.pbproj"/>
+    <exclude-dir name="^src/utils"/>
+    <exclude-file name="^doc/FLAC.tag"/>
+    <exclude-file name="^man/manpage.*"/>
+    <exclude-file name="^src/(libFLAC/ia32/lpc_asm-unrolled.nasm|test_libFLAC/matrix)$"/>
+    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|install-sh|libtool|libtool-disable-static|ltmain.sh|missing|mkinstalldirs|stamp-h1)$"/>
+    <exclude-file name="(Makefile.in|Makefile)$"/>
+    <exclude-file name="(.*\.a|.*\.la|.*\.lai|.*\.lo|.*\.o|.*\.pc|.*\.Plo|.*\.Po|.*\.so.*)$"/>
+    <exclude-file name="(example_c.*_.*code_file|test_.*)$"/>
+    <exclude-file name="^src/(flac/.libs/flac|flac/flac|metaflac/.libs/metaflac|metaflac/metaflac)$"/>
+  </project>
+  <project name="flex" location="src/router/flex">
+    <exclude-dir name="^MISC"/>
+    <exclude-file name=".*\.o"/>
+    <exclude-file name="^(\.bootstrap|config\..*|configure|conf\.in|flex|initscan.c|INSTALL|install.sh|libfl.a|Makefile|mkinstalldirs|parse.[ch]?|scan.c|skel.c|stamp-h)$"/>
+  </project>
+  <project name="forked-daapd" location="ap/gpl/iserver/ejurgensen-forked-daapd">
+    <locations name="ap/gpl/iserver/forked-daapd-0.19">
+      <location project="R6400"/>
+      <location project="R7000" till="1.0.9.10_1.2.21"/>
+      <location project="R8000" till="1.0.4.2_1.1.41"/>
+    </locations>
+    <exclude-dir name="^m4$"/>
+    <exclude-file name="Makefile$|Makefile.in$|tags"/>
+    <exclude-file name="(.*\.Plo|.*\.Po|.*\u)$"/>
+    <exclude-file name="^src(/pregen){0,1}/(DAAP|DAAP2SQL|DAAPLexer|DAAPParser|RSP2SQL|RSPLexer|RSPParser)\.[ch]$"/>
+    <exclude-file name="^src/(daap_query_hash.c|dacp_prop_hash.c|dmap_fields_hash.c|rsp_query_hash.c)$"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="^(forked-daapd)$"/>
+  </project>
+  <project name="hd-idle" location="ap/gpl/hd-idle-1.04">
+    <exclude-file name="tags"/>
+    <exclude-file name="hd-idle"/>
+    <exclude-file name=".*\.o$"/>
+  </project>
+  <project name="hdparm" location="ap/gpl/hdparm-9.43">
+    <exclude-file name="hdparm"/>
+    <exclude-file name=".*\.o$"/>
+  </project>
+  <project name="hotplug2" location="src/router/hotplug2">
+    <exclude-file name=".depend|hotplug2|.*\.o"/>
+  </project>
+  <project name="igmpv3proxy" location="ap/gpl/IGMP-PROXY">
+    <exclude-dir name="^autom4te.cache$"/>
+    <exclude-file name="^src/tags$"/>
+    <exclude-file name="^config.log$"/>
+    <exclude-file name="^(src/.*.o|gproxy)$"/>
+  </project>
+  <project name="iproute2" location="ap/gpl/iproute2">
+    <exclude-dir name="^man"/>
+    <exclude-file name="^(ip/rtmon|Config)$"/>
+    <exclude-file name="^(.*.a|.*.o|.*\.yacc\..*|ip/ip|tc/tc)$"/>
+  </project>
+  <project name="iptables" location="src/router/iptables-1.4.12/src">
+    <exclude-dir name="^(install|m4)$"/>
+    <exclude-file name="GNUmakefile|Makefile$|Makefile.in"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="(.*\.8|.*\.a|.*\.d{1,2}|.*\.la|.*\.lai|.*\o{1,2}|.*\.pc|.*\.Po|.*\.Plo|.*\.so)$"/>
+    <exclude-file name="xtables-multi|.*\.so.*"/>
+    <exclude-file name="^extensions/(initext.c|initext4.c|initext6.c|.*\.man)$"/>
+    <exclude-file name="^include/(iptables/internal.h|xtables.h)$"/>
+  </project>
+  <project name="l2tpd" location="ap/gpl/l2tpd-0.69">
+    <exclude-file name="^(.*.o|l2tpd)$"/>
+  </project>
+  <project name="libid3tag" location="ap/gpl/minidlna/libid3tag-0.15.0b">
+    <exclude-file name="^(.*\.a|.*\.la.*|.*\.lo|.*\.o|.*\.Plo|.*\.so.*|libid3tag.list)$"/>
+    <exclude-file name="^(Makefile|config\..*|libtool|msvc\+\+/Makefile|stamp-h1)$"/>
+  </project>
+  <project name="libvorbis" location="ap/gpl/minidlna/libvorbis-1.2.3">
+    <exclude-dir name="^(autom4te.cache|debian|doc|examples)$"/>
+    <exclude-file name="(Makefile.in|Makefile)$"/>
+    <exclude-file name="^lib/misc.c$"/>
+    <exclude-file name="^(aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="(.*\.a|.*\.la.*|.*\.lo|.*\.o|.*\.pc|.*\.Plo|.*\.Po|.*\.so.*|.*\.spec)$"/>
+    <exclude-file name="^(test/test|lib/test_sharedbook|test/.libs/test)$"/>
+  </project>
+  <project name="linux" location="components/opensource/linux/linux-2.6.36">
+    <exclude-dir name="^include/(config|generated)"/>
+    <exclude-dir name="^\.tmp_versions$"/>
+    <exclude-file name="^arch/arm/boot/(Image|zImage)$"/>
+    <exclude-file name="^arch/arm/boot/compressed/(lib1funcs.S|piggy.gzip|vmlinux|vmlinux.lds)$"/>
+    <exclude-file name="^arch/arm/(kernel/asm-offsets.s|kernel/vmlinux.lds|lib/lib.a)$"/>
+    <exclude-file name="^drivers/connector/cn.ko$"/>
+    <exclude-file name="^drivers/net/(ctf/ctf.ko|dpsta/dpsta.ko|emf/emf.ko|et/et.ko|igs/igs.ko|proxyarp/proxyarp.ko|wl/wl.ko)$"/>
+    <exclude-file name="^drivers/net/dhd/dhd(\.o|\.ko)$"/>
+    <exclude-file name="^drivers/net/wl/.*.o$"/>
+    <exclude-file name="^drivers/scsi/scsi_wait_scan.ko$"/>
+    <exclude-file name="^drivers/usb/host/(ehci-hcd.ko|ohci-hcd.ko|xhci-hcd.ko)$"/>
+    <exclude-file name="^include/linux/version.h$"/>
+    <exclude-file name="^kernel/(bounds.s)$"/>
+    <exclude-file name="^lib/(crc32table.h|gen_crc32table|lib.a|libcrc32c.ko)$"/>
+    <exclude-file name="^net/sched/(sch_hfsc.ko|sch_tbf.ko)$"/>
+    <exclude-file name="^scripts/basic/(docproc|fixdep|hash)$"/>
+    <exclude-file name="^scripts/kconfig/(.*conf|lex.zconf.c|zconf.hash.c|zconf.tab.c)$"/>
+    <exclude-file name="^scripts/mod/(elfconfig.h|mk_elfconfig|modpost)$"/>
+    <exclude-file name="^scripts/kallsyms"/>
+    <exclude-file name="^usr/(.initramfs_data.cpio.d|gen_init_cpio|initramfs_data.cpio)$"/>
+    <exclude-file name="^arm_build_env.sh$"/>
+    <exclude-file name="\.config.*|\.version"/>
+    <exclude-file name="^(.missing-syscalls.d|.tmp_System.map|.tmp_kallsyms1.S|.tmp_kallsyms2.S)$"/>
+    <exclude-file name="^Module.symvers$"/>
+    <exclude-file name="(modules.order|modules.builtin|built-in.o)$"/>
+    <exclude-file name="^(vmlinux|vmlinux_dbgsym|\.tmp_vmlinux1|\.tmp_vmlinux2|System.map)$"/>
+    <exclude-file name="(.*\.cmd|.*\.mod.c|.*_dbgsym.ko)$"/>
+  </project>
+  <project name="lua" location="ap/gpl/lua/source/src"/>
+  <project name="LZMA-SDK" location="src/tools/misc/lzma_src"/>
+  <project name="minidlna" location="ap/gpl/minidlna/minidlna-1.1.5">
+    <location name="ap/gpl/minidlna/minidlna.03.14" project="R6300v2"/>
+    <locations name="ap/gpl/minidlna/minidlna-1.0.26">
+      <location project="R6400"/>
+      <location project="R7000" till="1.0.7.12_1.2.5"/>
+      <location project="R8000" till="1.0.4.2_1.1.41"/>
+    </locations>
+    <exclude-dir name="^(m4|po)$"/>
+    <exclude-file name="^(ABOUT-NLS|INSTALL|Makefile|Makefile.in|aclocal.m4|compile|config\..*|configure|depcomp|install-sh|missing)$"/>
+    <exclude-file name="(.*\.o|minidlna)$"/>
+    <exclude-file name="^(NEWS|upnpglobalvars.h.old)$"/>
+  </project>
+  <project name="mtools" location="ap/gpl/mtools-4.0.10">
+    <exclude-file name="^(config.h|Makefile|mtools.info)$"/>
+  </project>
+  <project name="mxml" location="ap/gpl/iserver/mxml-2.7"/>
+  <project name="Netatalk" location="ap/gpl/timemachine/netatalk-2.2.5">
+    <locations name="ap/gpl/timemachine/netatalk-2.2.0">
+      <location project="R7000" till="1.0.2.194_1.0.15"/>
+    </locations>
+    <exclude-dir name="^(macros|man)$"/>
+    <exclude-file name="Makefile$|Makefile.bak$|Makefile.in$"/>
+    <exclude-file name=".*\.Plo|.*\.Po"/>
+    <exclude-file name="^(a|aclocal.m4|bootstrap|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="^(bin/cnid/cnid2_create)$"/>
+    <exclude-file name="^contrib/(macusers/macusers|shell_utils/apple_dump|shell_utils/asip-status.pl)$"/>
+    <exclude-file name="^distrib/config/netatalk-config$"/>
+    <exclude-file name="^etc/(afpd/auth.c.bak|afpd/volume.c.bak|cnid_dbd/config.h.in)$"/>
+    <exclude-file name="^files/(AppleVolumes.default|AppleVolumes.system|afpd.conf|afpd.init|detach_afp_shares)$"/>
+  </project>
+  <project name="ntfs-3g" location="ap/gpl/ntfs-3g-2009.3.8">
+    <exclude-file name="^(INSTALL|aclocal.m4|compile|config\..*|configure|depcomp|install-sh|libtool|ltmain.sh|missing|stamp-h1)$"/>
+    <exclude-file name="Makefile$|Makefile_arm$|Makefile.in$"/>
+    <exclude-file name=".*\.8|.*\.pc|.*\.Plo|.*\.Po"/>
+  </project>
+  <project name="ntpclient" location="src/router/ntpclient">
+    <exclude-file name="ntpclient|.*\.o"/>
+  </project>
+  <project name="openvpn" location="ap/gpl/openvpn-2.3.1">
+    <exclude-dir name="^(doc|m4|tests)$"/>
+    <exclude-file name="Makefile.in$"/>
+    <exclude-file name="^test/t_cllient.rc-sample$"/>
+    <exclude-file name="^(ntpclient|\.mailmap|\.svncommitters)$"/>
+    <exclude-file name=".*\.o"/>
+    <exclude-file name="^(aclocal.m4|config\..*|configure|depcomp|install-sh|ltmain.sh|missing)$"/>
+  </project>
+  <project name="ppp" location="ap/gpl/ppp-2.4.4">
+    <exclude-dir name="^(aix4|freebsd-.*|linux|netbsd-.*|NeXT|osf1|sunos4|svr4|ultrix)$"/>
+    <exclude-file name="Makefile.*"/>
+    <exclude-file name="^(README.*|TODO$|ppp.texi)$"/>
+    <exclude-file name="^pppd/(pppd|sys-aix4.c|sys-bsd.c|sys-NeXT.c|sys-osf.c|sys-sunos4.c|sys-svr4.c|sys-ultrix.c)$"/>
+    <exclude-file name="^.*.o$"/>
+  </project>
+  <project name="pppoe" location="ap/gpl/pppoecd">
+    <exclude-file name="^(start|pppoe2.o|pppoecd)$"/>
+  </project>
+  <project name="pptpclient" location="ap/gpl/pptp">
+    <exclude-dir name="^debian"/>
+    <exclude-file name="^Reference/(README.Reference|ms-chap.txt)$"/>
+    <exclude-file name="^(.*.o|config.h|pptp)$"/>
+    <exclude-file name="^(RELEASING|test-multiple-tunnels-.\.sh)$"/>
+  </project>
+  <project name="quagga" location="ap/gpl/zebra">
+    <exclude-dir name=".deps"/>
+    <exclude-file name="Makefile"/>
+    <exclude-file name="^(aczebra.m4|stamp-h.in)$"/>
+    <exclude-file name="^(config.h|config.log|config.status|stamp-h1)$"/>
+    <exclude-file name="(.*.a|.*.o)$"/>
+    <exclude-file name="^(ripd/ripd|zebra/zebra)$"/>
+  </project>
+  <project name="radvd" location="ap/gpl/radvd">
+    <exclude-file name="^(aclocal.m4|config.h.in|configure|Makefile.in|stamp-h1)$"/>
+    <exclude-file name="^(Makefile|config.h|config.log|config.status)$"/>
+    <exclude-file name="^(gram.c|gram.h|scanner.c|radvd|radvdump)$"/>
+    <exclude-file name="(.*\.o|.*\.Po|.*\.[58])$"/>
+  </project>
+  <project name="samba" location="ap/gpl/samba4/samba-4.4.3">
+    <locations name="ap/gpl/samba-3.0.25b">
+      <location project="R6300v2" till="1.0.4.24_10.0.87"/>
+      <location project="R6400" till="1.0.1.32_1.0.23"/>
+      <location project="R7000" till="1.0.9.10_1.2.21"/>
+      <location project="R8000" till="1.0.4.2_1.1.41"/>
+      <location project="R8500" till="1.0.2.116_1.0.90"/>
+    </locations>
+    <locations name="ap/gpl/samba-3.0.13">
+      <location project="R6300v2" till="1.0.3.2_1.0.57"/>
+      <location project="R6400" till="1.0.0.14_1.0.8"/>
+      <location project="R7000" till="1.0.1.22_1.0.15"/>
+    </locations>
+    <exclude-dir name="^(docs|examples|packaging|source/bin)$"/>
+    <exclude-file name=".*/Makefile$"/>
+    <exclude-file name="^(\.conf|config.h)$"/>
+    <exclude-file name="^source/(bin/log.nmbd|config.log|config.status|interfaces|log|proto_exists|smbadduser)$"/>
+    <exclude-file name="^source/(client/client_proto.h|nsswitch/winbindd_proto.h|smbd/build_options.c|web/swat_proto.h)$"/>
+    <exclude-file name="^source/include/(build_env.h|config.h.in|config.h|proto.h|stamp-h|version.h)$"/>
+    <exclude-file name="^source/utils/(net_proto.h|ntlm_auth_proto.h|passwd_proto.h)$"/>
+    <exclude-file name="(.*\.o|.*\.so.*)$"/>
+  </project>
+  <project name="sqlite" location="ap/gpl/minidlna/sqlite-3.6.22">
+    <exclude-dir name="^(.deps|autom4te.cache|test)$"/>
+    <exclude-file name="^(sqlite3.pc|configure|libtool|Makefile|Makefile.in|log)$"/>
+    <exclude-file name=".*.a|.*.la.*|.*.o|.*.so.*|sqlite3"/>
+    <exclude-file name="^(config\..*)$"/>
+  </project>
+  <project name="squashfs-tools" location="src/router/squashfs-4.2">
+    <exclude-file name="^(.*\.o|mksquashfs)$"/>
+  </project>
+  <project name="transmission" location="ap/gpl/transmission/transmission-2.73">
+    <exclude-dir name="^(extra|m4|macosx|po)$"/>
+    <exclude-file name="(.*\.1|.*\.css|.*\.dox|.*\.jpg|.*\.png|.*\.svg)$"/>
+    <exclude-file name="Makefile.in$"/>
+    <exclude-file name="^(AUTHORS|COPYING|ChangeLog|INSTALL|NEWS|README|aclocal.m4|config\..*|configure|depcomp|install-sh|ltmain.sh)$"/>
+    <exclude-file name="^libtransmission/version.h$"/>
+  </project>
+  <project name="udev" location="src/router/udev">
+    <exclude-file name="udevtrigger|vol_id|udev_version.h|.*\.a|.*\.o|.*\.pc|.*\.so.*"/>
+  </project>
+  <project name="udhcp" location="ap/gpl/udhcpd">
+    <exclude-file name="^(.*.o|dumpleases|udhcpd)$"/>
+  </project>
+  <project name="unzip" location="ap/gpl/unzip60">
+    <exclude-dir name="amiga"/>
+    <exclude-file name="^(.*.o|flags|funzip|unzip|unzipsfx)$"/>
+  </project>
+  <project name="vlan" location="src/router/vlan">
+    <exclude-file name="^(vconfig|README.1ST|.*\.o)$"/>
+  </project>
+  <project name="wakelan" location="ap/gpl/timemachine/netatalk-utility"/>
+  <project name="wget" location="ap/gpl/wget-1.12">
+    <exclude-dir name="^(.deps|autom4te.cache|doc|m4|msdos|po|tests|util|vms)$"/>
+    <exclude-file name="Makefile$|Makefile.in$"/>
+    <exclude-file name="^(aclocal.m4|cfg.mk|config.h.in|config.log|config.status|configure)$"/>
+    <exclude-file name="^(.x-sc_po_check|.x-sc_trailing_blank|README.checkout)$"/>
+    <exclude-file name="^src/(config.h|config.h.in|css.c|stamp-h1)$"/>
+    <exclude-file name="(.*\.m4|.*\.Po|.*\.Tpo)$"/>
+    <exclude-file name="(.*.a|.*.o)$"/>
+    <exclude-file name="^lib/(.*.h|charset.alias|ref-add.sed|ref-del.sed)$"/>
+    <exclude-file name="^src/(build_info.c|config.h.in~|version.c|wget)$"/>
+    <exclude-file name="^md5/(stdint.h)$"/>
+  </project>
+  <!--project name="xz" location="src/tools/misc/xz"-->
+  <project name="zeroconf" location="ap/gpl/zeroconf-0.9">
+    <exclude-file name="^(.*.d|.*.o|zeroconf)$"/>
+  </project>
+  <project name="zip" location="ap/gpl/zip30">
+    <exclude-dir name="amiga"/>
+    <exclude-file name="unix/Makefile.bak"/>
+    <exclude-file name="^(.*.o|flags|zip|zipcloak|zipnote|zipsplit)$"/>
+  </project>
+  <project name="zlib" location="ap/gpl/minidlna/zlib-1.2.3"/>
+</locations>

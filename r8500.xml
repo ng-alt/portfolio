@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locations>
-  <include name="r8000.xml"/>
-  <!-- override the included config files -->
+  <include name="base.xml"/>
+  <include name="broadcom.xml"/>
+
   <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
     <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gpio|hotplug2/etc|igd|igmp|igs|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
     <include-dir name="^ap/acos$"/>
