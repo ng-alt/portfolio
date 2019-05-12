@@ -138,6 +138,11 @@
     <exclude-file name="^(ip/rtmon|Config)$"/>
     <exclude-file name="^(.*.a|.*.o|.*\.yacc\..*|ip/ip|tc/tc)$"/>
   </project>
+  <project name="ipset" location="ap/gpl/circle/ipset-6.30">
+    <exclude-dir name="^(build-aux|libltdl|m4|tests)$"/>
+    <exclude-file name="^(aclocal.m4|config.h.in|configure)$"/>
+    <exclude-file name="Makefile.in$"/>
+  </project>
   <project name="iptables" location="src/router/iptables-1.4.12/src">
     <exclude-dir name="^(install|m4)$"/>
     <exclude-file name="GNUmakefile|Makefile$|Makefile.in"/>
