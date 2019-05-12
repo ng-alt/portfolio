@@ -34,6 +34,7 @@
     <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
     <include-file name="^arm-uclibc/target/bin/(circled|startcircle)$"/>
     <include-file name="^arm-uclibc/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
+    <include-file name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/net/ipset/skipctf.ko$"/>
     <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|api|arp|autoconfig_wan_down|autoconfig_wan_up|bcrelay|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burn_sw_feature|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
     <include-file name="^arm-uclibc/target/sbin/(dhcp6c_down|dhcp6c_up|dlna|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect|firmware)$"/>
     <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|internet|ipv6-conntab|ipv6_drop_all_pkt|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|mstat|nvconfig|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
