@@ -6,7 +6,6 @@
   <project name="vendor_broadcom_router" location="src/router" symlinks="true" cleanup="true" override="true" strict="true">
     <include-dir name="^arm-uclibc/install/(acsd|eapd|emf|gbsd|gpio|hotplug2/etc|igd|igmp|igs|iqos|libupnp|nas|ses|ses_cl|udev/etc|utelnetd|utils|wlconf|wps)$"/>
     <include-dir name="^ap/acos$"/>
-    <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/usbprinter$"/>
     <include-dir name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/lib$" exclude-files="libcrc32c.ko"/>
     <include-dir name="^arm-uclibc/target/(opt|www)$"/>
     <include-dir name="^bcmupnp$"/>
@@ -34,19 +33,21 @@
     <include-file name="^arm-uclibc/install/rc/sbin/(erase|hotplug|init|preinit|stats|write|write_cfe)$"/>
     <include-file name="^arm-uclibc/target/bin/(circled|startcircle)$"/>
     <include-file name="^arm-uclibc/target/etc/(group|.*\.ico|igmprt.conf|lld2d.conf|passwd|resolv.conf|symantec)$"/>
+    <include-file name="^arm-uclibc/target/etc/init.d/(leafp2p.sh|remote.sh)$"/>
     <include-file name="^arm-uclibc/target/lib/modules/2.6.36.4brcmarm\+/kernel/drivers/net/ipset/skipctf.ko$"/>
-    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|api|arp|autoconfig_wan_down|autoconfig_wan_up|bcrelay|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burn_sw_feature|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
+    <include-file name="^arm-uclibc/target/sbin/(acos_init|acos_service|acsd|api|arp|autoconfig_wan_down|autoconfig_wan_up|bcrelay|bd|burn5gpass|burn5gssid|burnboardid|burncode|burnethermac|burn_hw_rev|burn_sw_feature|burnpass|burnpin|burnrf|burnsku|burnsn|burnssid)$"/>
     <include-file name="^arm-uclibc/target/sbin/(dhcp6c_down|dhcp6c_up|dlna|dumprf|EditAuthorizedList|EditURLWhiteList|EnableTrafficRedirect|firmware)$"/>
     <include-file name="^arm-uclibc/target/sbin/(getchksum|getopenvpnsum|htmlget|internet|ipv6-conntab|ipv6_drop_all_pkt|ipv6_enable_wan_ping_to_lan|landown|lanup|leddown|ledup|mstat|nvconfig|parser|read_bd|reset_no_reboot|restart_all_processes)$"/>
     <include-file name="^arm-uclibc/target/sbin/(routerinfo|showconfig|system|thermalctrl|ubdcmd|uptime|version|wwan)$"/>
+    <include-file name="^arm-uclibc/target/share/(devices.json|knowndevices)$"/>
     <include-file name="^arm-uclibc/target/usr/bin/(taskset)$"/>
     <include-file name="^arm-uclibc/target/usr/lib/(libacos_shared.so|libbigballofmud.so.0|libnat.so|libreadycloud.so|rclibrary.so)$"/>
     <include-file name="^arm-uclibc/target/usr/local/share/foxconn_ca$"/>
     <include-file name="^arm-uclibc/target/usr/sbin/(acl_logd|acs_cli|arp_check|autoipd|bcmiqosd|brctl|ca.pem|cald|chat|checkDullWan|check_db|check_fw|check_kwilt|check_ra|chip_temp_dbg.sh|cli|cnid_dbd|cnid_metad)"/>
     <include-file name="^arm-uclibc/target/usr/sbin/(cp_checkbox.sh|cp_installer.sh|cp_platform.sh|ddnsd|debug_logd|detach_afp_shares|device_detect|dlnad|dnsRedirectReplyd|dslcheck|email|fbwifi_command|ftp|ftpc|heartbeat|httpd|httpsd.pem)$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|lcli|lld2d|lld2d.conf|lld2test|lld_xbox|mevent|mld|modemReset|moni.sh|outputimage|patrol_tq.conf|pot|qos.conf|qos.sh|queryusb)"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(readycloud_unregister|remote_share_conf|remote_smb_conf|remote_user_conf|ripd|rtsol|rule.trf|sample.bin|scheact|swresetd|tdts_rule_agent|telnetenabled|tfmeter|timesync|trafficUsageDetailsD|update_device_info|upnpd)$"/>
-    <include-file name="^arm-uclibc/target/usr/sbin/(usb_disk_port}|usb_modeswitch|usbheartbeat|usbportscan|usbreset|wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(IPv6-relay|iqos_cli|lcli|lld2d|lld2d.conf|lld2test|lld_xbox|mevent|mld|modemReset|moni.sh|outputimage|patrol_tq.conf|pot|qos.conf|qos.sh|queryusb)"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(readycloud_unregister|remote_share_conf|remote_smb_conf|remote_user_conf|ripd|rtsol|rule.trf|sample.bin|scheact|settings.txt|speedtest|swresetd|tdts_rule_agent|telnetenabled|tfmeter|timesync|trafficUsageDetailsD|update_device_info|upnpd)$"/>
+    <include-file name="^arm-uclibc/target/usr/sbin/(usb_disk_port|usb_modeswitch|usbheartbeat|usbportscan|usbreset|wan_debug|wandetect|wanled|wl|wlanconfigd|wlconf|wpsd)$"/>
     <include-file name="^compressed/Makefile$"/>
     <include-file name="^shared/(.*\.c|.*\.h|.*\.in|Makefile|passpoint_nvparse.o)$"/>
     <include-file name="^(Makefile|README)$"/>
