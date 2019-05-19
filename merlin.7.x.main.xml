@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations>
+  <project name="linux" location="release/src-rt-7.x.main/src/linux/linux-2.6.36"/>
+</locations>
