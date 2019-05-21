@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locations>
   <project name="linux" location="release/src-rt-7.x.main/src/linux/linux-2.6.36"/>
+  <project name="vendor_broadcom_router_base" location="release/src-rt-7.x.main/src">
+    <include-dir name="^(bcm57xx|bcmcrypto|btools)$"/>
+    <include-dir name="^cfe$" exclude-files="t2b/t2b$"/>
+    <include-dir name="^(common|ctools|et|include|makefiles|ntools|shared)$"/>
+    <include-dir name="^wl/(config|exe|olpc|ppr|sysdeps)$"/>
+    <include-dir name="^wps$"/>
+    <include-file name="^tools/(misc/epi_ttcp.c|release/WLAN.usf)$"/>
+    <include-file name="^profile.mak$"/>
+    <include-file name="^(upb.inc|upb.mak|upb-platform.mak)$"/>
+    <copy-file src="../../src-rt/Makefile" dest="Makefile"/>
+    <copy-file src="../../src-rt/platform.mak" dest="platform.mak"/>
+    <copy-file src="../../src-rt/target.mak" dest="target.mak"/>
+    <copy-file src="../../src-rt/version.conf" dest="version.conf"/>
+  </project>
 </locations>
