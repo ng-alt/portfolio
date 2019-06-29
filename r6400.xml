@@ -62,6 +62,7 @@
     <copy-file src="../ap/gpl/iserver/start_forked-daapd.sh" dest="gpl/iserver/start_forked-daapd.sh"/>
     <copy-file src="../ap/gpl/lua/Makefile" dest="gpl/lua/Makefile"/>
     <copy-file src="../ap/gpl/minidlna/Makefile" dest="gpl/minidlna/Makefile"/>
+    <copy-file src="../ap/gpl/openssl-1.0.2h/new_opencrt" dest="gpl/openssl/opencrt"/>
     <copy-file src="../ap/gpl/samba4/Makefile" dest="gpl/samba4/Makefile"/>
     <copy-file src="../ap/gpl/samba4/smb_lib.txt" dest="gpl/samba4/smb_lib.txt"/>
     <copy-file src="../ap/gpl/timemachine/Makefile" dest="gpl/timemachine/Makefile"/>
