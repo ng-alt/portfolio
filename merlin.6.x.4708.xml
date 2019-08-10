@@ -4,9 +4,11 @@
     <exclude-file name=".*\.o"/>
     <exclude-file name="^src/6relayd$"/>
   </project>
-  <project name="accel-pptp" location="release/src-rt-6.x.4708/router/accel-pptpd">
-    <exclude-dir name="^(pppd_plugin|kernel)$"/>
-    <exclude-file name="NEWS|README|TODO|news|readme|todo"/>
+  <project name="accel-pptp">
+    <subdir name="." location="release/src-rt-6.x.4708/router/accel-pptpd">
+      <exclude-dir name="^(pppd_plugin|kernel)$"/>
+      <exclude-file name="NEWS|README|TODO|news|readme|todo"/>
+    </subdir>
     <subdir name="pppd_plugin" location="release/src-rt-6.x.4708/router/accel-pptp" symlinks="true">
       <exclude-dir name="^(\.deps|\.libs)$"/>
       <exclude-file name=".*\.o|.*\.lo"/>
