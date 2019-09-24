@@ -181,7 +181,7 @@
   <project name="usrsctp" location="release/src-rt-6.x.4708/router/asusnatnl/pjproject-1.12/third_party/usrsctp"/>
   <project name="vsftpd" location="release/src-rt-6.x.4708/router/vsftpd"/>
   <project name="vendor_broadcom_router_base" location="release/src-rt-6.x.4708">
-    <include-dir name="^(bcm57xx|bcmcrypto|bcm_tools|btools)$"/>
+    <include-dir name="^(bcm57xx|bcmcrypto|bcm_tools|btools|ctools)$"/>
     <include-dir name="^cfe$" exclude-files="t2b/t2b$"/>
     <include-dir name="^(common|et|include|makefiles|ntools|rts|shared)$"/>
     <include-dir name="^wl/(clm|config|exe|sysdeps/RT-AC68U)$"/>
