@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<value-sets name="repo-list">
+  <!-- alsa-lib -->
+  <set name="amule" url="git://github.com/amule-project/amule"/>
+  <!-- antlr3 -->
+  <set name="avahi" url="git://github.com/lathiat/avahi"/>
+  <!-- bridge-utils -->
+  <set name="buildroot" url="git://github.com/buildroot/buildroot" pattern-revision="(2012.11.x|2017.11.x|master)$"/>
+  <set name="busybox" url="git://github.com/mirror/busybox" pattern-revision="(1_7_stable|master)$"/>
+  <set name="c-ares" url="git://github.com/c-ares/c-ares" pattern-revision="master$"/>
+  <set name="cJSON" url="git://github.com/DaveGamble/cJSON" pattern-revision="master$"/>
+  <set name="coreutils" url="git://github.com/coreutils/coreutils" pattern-revision="master$"/>
+  <set name="cpython" url="git://github.com/python/cpython"/>
+  <set name="cryptopp" url="git://github.com/weidai11/cryptopp"/>
+  <set name="curl" url="git://github.com/curl/curl" pattern-revision="master$"/>
+  <set name="dropbear" url="git://github.com/mkj/dropbear" pattern-revision="(main|master)$"/>
+  <set name="dlib" url="git://github.com/deanproxy/dlib"/>
+  <set name="dnsmasq" url="git://thekelleys.org.uk/dnsmasq"/>
+  <set name="dosfstools" url="git://github.com/dosfstools/dosfstools"/>
+  <set name="eMail" url="git://github.com/deanproxy/eMail"/>
+  <set name="easy-rsa" url="git://github.com/OpenVPN/easy-rsa"/>
+  <set name="ebtables" url="git://git.netfilter.org/ebtables"/>
+  <set name="flac" url="git://github.com/xiph/flac"/>
+  <set name="flex" url="git://github.com/westes/flex" pattern-revision="(master|unicode)$"/>
+  <set name="forked-daapd" url="git://github.com/ejurgensen/forked-daapd" pattern-revision="master$"/>
+  <set name="freeradius-server" url="git://github.com/FreeRADIUS/freeradius-server"/>
+  <set name="FFmpeg" url="git://github.com/FFmpeg/FFmpeg"/>
+  <set name="getdns" url="git://github.com/getdnsapi/getdns"/>
+  <set name="gettext" url="git://github.com/autotools-mirror/gettext"/>
+  <set name="gnulib" url="git://github.com/coreutils/gnulib"/>
+  <set name="gperf" url="git.savannah.gnu.org/gperf.git"/>
+  <!-- gSOAP -->
+  <!-- hostap-06 -->
+  <!-- hub-ctrl -->
+  <set name="igmpproxy" url="git://github.com/pali/igmpproxy"/>
+  <set name="inadyn" url="git://github.com/troglobit/inadyn" pattern-revision="master$"/>
+  <set name="iperf" url="git://github.com/esnet/iperf" pattern-revision="master$"/>
+  <set name="iproute2" url="git://github.com/shemminger/iproute2"/>
+  <set name="ipset" url="git://github.com/Olipro/ipset"/>
+  <set name="iputils" url="git://github.com/iputils/iputils" pattern-revision="master$"/>
+  <set name="iw" url="git://git.kernel.org/pub/scm/linux/kernel/git/jberg/iw.git"/>
+  <set name="iwinfo" url="http://git.openwrt.org/project/iwinfo.git"/>
+  <set name="jansson" url="git://github.com/akheron/jansson" pattern-revision="master$"/>
+  <set name="json-c" url="git://github.com/json-c/json-c" pattern-revision="master$"/>
+  <set name="l7-protocols" url="git://github.com/l7-filter/l7-protocols"/>
+  <set name="libav" url="git://github.com/libav/libav"/>
+  <set name="libconfuse" url="git://github.com/martinh/libconfuse"/>
+  <set name="libevent" url="git://github.com/libevent/libevent"/>
+  <set name="libexif" url="git://github.com/libexif/libexif" pattern-revision="master$"/>
+  <set name="libexpat" url="git://github.com/libexpat/libexpat" pattern-revision="master$"/>
+  <set name="libffi" url="git://github.com/libffi/libffi"/>
+  <set name="libgcrypt" url="git://github.com/gpg/libgcrypt"/>
+  <set name="libgpg-error" url="git://github.com/gpg/libgpg-error"/>
+  <!-- libjpeg -->
+  <set name="libubox" url="https://git.openwrt.org/project/libubox.git"/>
+  <set name="lighttpd" url="git://github.com/lighttpd/lighttpd1.4"/>
+  <set name="libical" url="git://github.com/libical/libical"/>
+  <set name="libmnl" url="git://git.netfilter.org/libmnl"/>
+  <set name="libpcap" url="git://github.com/the-tcpdump-group/libpcap"/>
+  <set name="libpng" url="git://github.com/glennrp/libpng"/>
+  <set name="libsodium" url="git://github.com/jedisct1/libsodium"/>
+  <set name="libusb" url="git://github.com/libusb/libusb"/>
+  <!-- libusb-compat -->
+  <set name="libxml2" url="git://github.com/GNOME/libxml2"/>
+  <!-- lprng -->
+  <set name="lua" url="git://github.com/lua/lua" pattern-revision="master$"/>
+  <set name="lzma" url="git://github.com/XZliblzma/lzma"/>
+  <set name="LZMA-SDK" url="git://github.com/jljusten/LZMA-SDK"/>
+  <set name="mbedtls" url="git://github.com/ARMmbed/mbedtls"/>
+  <set name="ministun" url="git://github.com/themiron/ministun"/>
+  <set name="miniupnp" url="git://github.com/miniupnp/miniupnp" pattern-revision="master$"/>
+  <set name="nano" url="https://git.savannah.gnu.org/cgit/nano"/>
+  <set name="ncurses" url="git://github.com/mirror/ncurses"/>
+  <!-- neon -->
+  <set name="net-snmp" url="git://github.com/haad/net-snmp"/>
+  <set name="nettle" url="git://github.com/gnutls/nettle" pattern-revision="master$"/>
+  <set name="Netatalk" url="git://github.com/Netatalk/Netatalk"/>
+  <set name="nfs-utils" url="git://github.com/kouril/nfs-utils"/>
+  <set name="odhcp6c" url="git://github.com/openwrt/odhcp6c"/>
+  <set name="ogg" url="git://github.com/xiph/ogg"/>
+  <!-- OpenPAM -->
+  <set name="openssl" url="git://github.com/openssl/openssl"/>
+  <set name="openvpn" url="git://github.com/OpenVPN/openvpn"/>
+  <!-- pcre -->
+  <set name="picocom" url="git://github.com/npat-efault/picocom"/>
+  <set name="pjproject" url="git://github.com/pjsip/pjproject"/>
+  <!-- portaudio -->
+  <set name="portmap" url="git://neil.brown.name/portmap"/>
+  <set name="ppp" url="git://github.com/paulusmack/ppp"/>
+  <set name="quagga" url="git://github.com/Quagga/quagga"/>
+  <set name="radvd" url="git://github.com/reubenhwk/radvd"/>
+  <set name="samba" url="git://github.com/samba-team/samba"/>
+  <set name="sqlite" url="git://github.com/mackyle/sqlite"/>
+  <set name="squashfs-tools" url="git://github.com/plougher/squashfs-tools"/>
+  <set name="sysstat" url="git://github.com/sysstat/sysstat"/>
+  <set name="tcpdump" url="git://github.com/the-tcpdump-group/tcpdump"/>
+  <set name="transmission" url="git://github.com/transmission/transmission"/>
+  <set name="tor" url="git://github.com/torproject/tor"/>
+  <set name="udt4" url="git://github.com/InstantWebP2P/udt4"/>
+  <!-- umem -->
+  <set name="Uqmi" url="https://git.openwrt.org/project/uqmi.git"/>
+  <set name="usrsctp" url="git://github.com/sctplab/usrsctp"/>
+  <!-- udev -->
+  <set name="vorbis" url="git://git.xiph.org/mirrors/vorbis.git"/>
+  <!-- vsftpd -->
+  <set name="wget" url="git://github.com/mirror/wget" pattern-revision="master$"/>
+  <!-- wxWidgets -->
+  <set name="xz" url="git://github.com/xz-mirror/xz"/>
+  <set name="zlib" url="git://github.com/madler/zlib"/>
+</value-sets>

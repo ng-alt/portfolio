@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+  <global-option name="keep-name"/>
+  <global-option name="all"/>
+
+  <include name="repo-external-list.xml"/>
+  <project name="ng-external" group="ng-alt" source="repo-list">
+    <option name="schema" value="git-b"/>
+    <option name="git" value="$url"/>
+    <option name="name" value="$name"/>
+    <option name="relative-dir" value="$(name).git"/>
+    <patterns category="revision">
+      <pattern name="$(url)" value="$(pattern-revision)" skip-if-inexistence="true"/>
+    </patterns>
+    <patterns category="tag">
+      <pattern name="$(name)" value="$(pattern-tag)" skip-if-inexistence="true"/>
+    </patterns>
+  </project>
+</projects>
