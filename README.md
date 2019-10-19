@@ -2,7 +2,11 @@ Introduce
 ==========
 
 The repository contains the rules for [krep] to import the source codes of
-Netgear routers from its [NETGEAR-Open-Source-Code-for-Programmers-GPL] website.
+Netgear routers from its [NETGEAR-Open-Source-Code-for-Programmers-GPL] website
+and the opensource project from its original git repository or package release.
+
+Netgear project
+----------------
 
 Each router project was imported in different time. Because the rules are
 updated accordingly with the late projects, the final importing stuffs will be
@@ -53,6 +57,22 @@ $ krep repo-import --config-file r7000.xml R7000-* --pattern 'p:vendor_broadcom_
 
 The option `--pattern` would be used to control which project need to be
 imported instead to import all project described in `manifest.xml`.
+
+External projects
+------------------
+
+`krep` can manage the immigration from the packages with source code. And it can also
+support to immigrate the git repositories from other locations.
+
+`external.xml` provides the basic framework to contains the git repository list in
+`repo-external-list.xml`, which uses `set` to list all activiated repositories in the
+project. The list can be updated to add more repositories.
+
+The command is simple to use.
+
+```bash
+$ krep batch -f external.xml --remote git@github.com/ng-alt -j6
+```
 
 [krep]: http://github.com/cadappl/krep
 [NETGEAR-Open-Source-Code-for-Programmers-GPL]: https://kb.netgear.com/2649/NETGEAR-Open-Source-Code-for-Programmers-GPL
